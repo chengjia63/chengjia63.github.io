@@ -5,6 +5,8 @@
 layout: page
 title: About
 ---
+<img src="/assets/chengjia.jpg" width="200" height="200">
+
 I am a master's student in Computer Science and Engineering at the University
 of Michigan (U-M). My interests are machine learning (ML) and computer vision
 (CV), especially their applications in medicine and robotics. 
@@ -16,4 +18,5 @@ develop software that can potentially lead to better treatment of patients.
 During my undergraduate studies, I was a part of Michigan Autonomous Aerial
 Vehicles (MAAV) and the Michigan Marching Band.
 
-### Site under construction. Work in progress.
+
+### Site under construction - work in progress
