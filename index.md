@@ -5,18 +5,41 @@
 layout: page
 title: About
 ---
-<img src="/assets/chengjia.jpg" width="200" height="200">
 
-I am a master's student in Computer Science and Engineering at the University
-of Michigan (U-M). My interests are machine learning (ML) and computer vision
-(CV), especially their applications in medicine and robotics. 
-I am a Graduate Student Instructor for ENGR 101, Introduction to Computers and
-Programming, where I teach first-year undergraduate students programming
-concepts in MATLAB and C++. I am also a research assistant at the U-M Medical
-School, where I leverage my knowledge in artificial intelligence (AI) to
-develop software that can potentially lead to better treatment of patients.
-During my undergraduate studies, I was a part of Michigan Autonomous Aerial
-Vehicles (MAAV) and the Michigan Marching Band.
+<style>
+/* Desktop: */
+.col-1 {width: 20%;}
+.col-2 {width: 80%;}
+[class*="col-"] {
+    float: left;
+}
+@media only screen and (max-width: 800px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+</style>
+
+<div>
+    <div class="col-1">
+        <img src="/assets/chengjia.jpg" width="128" height="128">
+    </div>
+    <div class="col-2">
+        <p>
+        I am a master's student in Computer Science and Engineering at the University
+        of Michigan (U-M). My interests are machine learning (ML) and computer vision
+        (CV), especially their applications in medicine and robotics. 
+        I am a Graduate Student Instructor for ENGR 101, Introduction to Computers and
+        Programming, where I teach first-year undergraduate students programming
+        concepts in MATLAB and C++. I am also a research assistant at the U-M Medical
+        School, where I leverage my knowledge in artificial intelligence (AI) to
+        develop software that can potentially lead to better treatment of patients.
+        During my undergraduate studies, I was a part of Michigan Autonomous Aerial
+        Vehicles (MAAV) and the Michigan Marching Band.
+        </p>
+    </div>
+</div>
+
 
 
 ### Site under construction - work in progress
