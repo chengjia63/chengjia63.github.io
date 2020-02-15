@@ -18,6 +18,7 @@ title: About
 }
 .profile {
     width: 100%;
+    border-radius: 50%;
 }
 [class*="col-"] {
     float: right;
@@ -35,6 +36,7 @@ title: About
     .profile {
         min-width: 192px;
         width: 30%;
+        border-radius: 50%;
     }
     [class*="col-"] {
         width: 100%;
