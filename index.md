@@ -8,12 +8,34 @@ title: About
 
 <style>
 /* Desktop: */
-.col-1 {width: 20%;}
-.col-2 {width: 80%;}
-[class*="col-"] {
-    float: left;
+.col-1 {
+    width: 20%;
 }
+.col-2 {
+    width: 75%;
+    padding-right: 5%;
+    text-align: justify;
+}
+.profile {
+    width: 100%;
+}
+[class*="col-"] {
+    float: right;
+}
+
 @media only screen and (max-width: 800px) {
+    .col-1 {
+        padding-bottom: 16px;
+        text-align: center;
+    }
+    .col-2 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .profile {
+        min-width: 192px;
+        width: 30%;
+    }
     [class*="col-"] {
         width: 100%;
     }
@@ -22,7 +44,7 @@ title: About
 
 <div>
     <div class="col-1">
-        <img src="/assets/chengjia.jpg" width="128" height="128">
+        <img src="/assets/chengjia.jpg" class="profile">
     </div>
     <div class="col-2">
         <p>
@@ -40,6 +62,31 @@ title: About
     </div>
 </div>
 
+### Publications
 
+* [Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of Traumatic
+     Brain Injuries](https://ieeexplore.ieee.org/document/8983159)<br>
+    **Cheng Jiang**, Jie Cao, Craig Williamson, Negar Farzaneh, Venkatakrishna
+    Rajajee, Jonathan Gryak, Kayvan Najarian, and S.M.Reza Soroushmehr<br>
+    *IEEE International Conference on Bioinformatics and Biomedicine (BIBM),*
+    2019
+* [Automated subdural hematoma segmentation for traumatic brain injured (TBI)
+     patients](https://ieeexplore.ieee.org/document/8037505)<br>
+    Negar Farzaneh, S.M.Reza Soroushmehr, Craig A. Williamson, **Cheng Jiang**,
+    Ashok Srinivasan, Jayapalli R. Bapuraj, Kevin R. Ward, Frederick K. Korley,
+    and Kayvan Najarian<br>
+    *39th Annual International Conference of the IEEE Engineering in Medicine
+    and Biology Society (EMBC),* 2017
 
-### Site under construction - work in progress
+<!--
+### Teaching
+
+* Graduate Student Instructor, ENGR 101 Intro Computers & Programming<br>
+    *Fall 19, Winter 20*
+-->
+
+### Industry Experience
+
+* Incoming Research Intern, nuTonomy (Aptiv), Summer 2020
+* Vehicle Engineering Intern, General Motors, Summer 2018
+
