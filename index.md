@@ -10,6 +10,7 @@ title: About
 /* Desktop: */
 .col-1 {
     width: 20%;
+    text-align: center;
 }
 .col-2 {
     width: 75%;
