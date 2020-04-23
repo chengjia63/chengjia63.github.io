@@ -43,6 +43,7 @@ title: About
         width: 100%;
     }
 }
+
 </style>
 
 <div>
@@ -51,33 +52,65 @@ title: About
     </div>
     <div class="col-2">
         <p>
-        I am a master's student in Computer Science and Engineering at the University
-        of Michigan (U-M). My interests are machine learning (ML) and computer vision
-        (CV), especially their applications in medicine and robotics. 
-        I am a Graduate Student Instructor for ENGR 101, Introduction to Computers and
-        Programming, where I teach first-year undergraduate students programming
-        concepts in MATLAB and C++. I am also a research assistant at the U-M Medical
-        School, where I leverage my knowledge in artificial intelligence (AI) to
-        develop software that can potentially lead to better treatment of patients.
-        During my undergraduate studies, I was a part of Michigan Autonomous Aerial
-        Vehicles (MAAV) and the Michigan Marching Band.
+        I am a master's student in Computer Science and Engineering at the
+        University of Michigan (U-M). My interests are machine learning (ML)
+        and computer vision (CV), especially their applications in medicine and
+        robotics. I am a Graduate Student Instructor for ENGR 101, Introduction
+        to Computers and Programming, where I teach first-year undergraduate
+        students programming concepts in MATLAB and C++. I am also a research
+        assistant at the U-M Medical School, where I leverage my knowledge in
+        artificial intelligence (AI) to develop software that may potentially
+        lead to better treatment of patients. During my undergraduate studies,
+        I was a part of Michigan Autonomous Aerial Vehicles (MAAV) and
+        Michigan Marching Band.
         </p>
     </div>
 </div>
 
+### Education
+
+**University of Michigan**, Ann Arbor, MI
+
+* Master of Science in Engineering, Computer Science and Engineering  
+Expected May 2021
+* Bachelor of Science in Engineering *with Honors*, Computer Science.
+Minor in Physics  
+Summa Cum Laude  
+May 2019  
+
+*Coursework:*
+- Computer Vision (EECS 442)
+- Machine Learning (EECS 445)
+- Deep Learning (EECS 498)
+- Artificial Intelligence (EECS 492)
+- Autonomous Robotics (EECS 467)
+- Matrix Methods (EECS 551)
+- Operating Systems (EECS 482)
+- Web Systems (EECS 485)
+- Computer Security (EECS 388)
+- Compilers (EECS 583)
+- Algorithms (EECS 586, in progress)
+- Mobile Robotics (EECS 568, in progress)
+
 ### Publications
 
-* [Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of Traumatic
-     Brain Injuries](https://ieeexplore.ieee.org/document/8983159)<br>
+- [Coupled matrix-matrix and coupled tensor-matrix completion methods for
+    predicting drug–target interactions](
+    https://academic.oup.com/bib/article/doi/10.1093/bib/bbaa025/5809565)  
+    Maryam Bagherian, Renaid Kim, *Cheng Jiang*, Maureen A. Sartor, Harm
+    Derksen, Kayvan Najarian
+    *Briefings in Bioinformatics,* 2020
+- [Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of Traumatic
+     Brain Injuries](https://ieeexplore.ieee.org/document/8983159)  
     **Cheng Jiang**, Jie Cao, Craig Williamson, Negar Farzaneh, Venkatakrishna
-    Rajajee, Jonathan Gryak, Kayvan Najarian, and S.M.Reza Soroushmehr<br>
+    Rajajee, Jonathan Gryak, Kayvan Najarian, and S.M.Reza Soroushmehr  
     *IEEE International Conference on Bioinformatics and Biomedicine (BIBM),*
     2019
-* [Automated subdural hematoma segmentation for traumatic brain injured (TBI)
-     patients](https://ieeexplore.ieee.org/document/8037505)<br>
+- [Automated subdural hematoma segmentation for traumatic brain injured (TBI)
+     patients](https://ieeexplore.ieee.org/document/8037505)  
     Negar Farzaneh, S.M.Reza Soroushmehr, Craig A. Williamson, **Cheng Jiang**,
     Ashok Srinivasan, Jayapalli R. Bapuraj, Kevin R. Ward, Frederick K. Korley,
-    and Kayvan Najarian<br>
+    and Kayvan Najarian  
     *39th Annual International Conference of the IEEE Engineering in Medicine
     and Biology Society (EMBC),* 2017
 
@@ -90,6 +123,6 @@ title: About
 
 ### Industry Experience
 
-* Incoming Research Intern, nuTonomy (Aptiv), Summer 2020
-* Vehicle Engineering Intern, General Motors, Summer 2018
+- Incoming Research Intern, nuTonomy (Aptiv), Summer 2020
+- Vehicle Engineering Intern, General Motors, Summer 2018
 
