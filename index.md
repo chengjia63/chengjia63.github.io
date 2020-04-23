@@ -95,8 +95,7 @@ May 2019
 ### Publications
 
 - [Coupled matrix-matrix and coupled tensor-matrix completion methods for
-    predicting drug–target interactions](
-    https://academic.oup.com/bib/article/doi/10.1093/bib/bbaa025/5809565)  
+    predicting drug–target interactions](https://doi.org/10.1093/bib/bbaa025)  
     Maryam Bagherian, Renaid Kim, *Cheng Jiang*, Maureen A. Sartor, Harm
     Derksen, Kayvan Najarian
     *Briefings in Bioinformatics,* 2020
