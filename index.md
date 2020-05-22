@@ -52,13 +52,13 @@ title: About
     </div>
     <div class="col-2">
         <p>
-        I am a master's student in Computer Science and Engineering at the
-        University of Michigan (U-M). My interests are machine learning (ML)
-        and computer vision (CV), especially their applications in medicine and
+        I am a master's student in Computer Science & Engineering (CSE) at the
+        University of Michigan (U-M). My interests are computer vision (CV) and
+        machine learning (ML), especially their applications in medicine and
         robotics. I am a Graduate Student Instructor for ENGR 101, Introduction
         to Computers and Programming, where I teach first-year undergraduate
         students programming concepts in MATLAB and C++. I am also a research
-        assistant at the U-M Medical School, where I leverage my knowledge in
+        assistant at Michigan Medicine, where I leverage my knowledge in
         artificial intelligence (AI) to develop software that may potentially
         lead to better treatment of patients. During my undergraduate studies,
         I was a part of Michigan Autonomous Aerial Vehicles (MAAV) and
@@ -79,18 +79,19 @@ Summa Cum Laude
 May 2019  
 
 *Coursework:*
-- Computer Vision (EECS 442)
+- Computer Vision (EECS 442, EECS 542 in progress)
 - Machine Learning (EECS 445)
 - Deep Learning (EECS 498)
 - Artificial Intelligence (EECS 492)
-- Autonomous Robotics (EECS 467)
-- Matrix Methods (EECS 551)
-- Operating Systems (EECS 482)
+- Natural Language Processing (EECS 595 in progress)
+- Algorithms (EECS 586)
+- Operating Systems (EECS 482, EECS 582 in progress)
 - Web Systems (EECS 485)
 - Computer Security (EECS 388)
 - Compilers (EECS 583)
-- Algorithms (EECS 586, in progress)
-- Mobile Robotics (EECS 568, in progress)
+- Mobile Robotics (EECS 568)
+- Autonomous Robotics (EECS 467)
+- Matrix Methods (EECS 551)
 
 ### Publications
 
