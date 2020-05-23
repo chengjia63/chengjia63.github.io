@@ -1,6 +1,8 @@
 ---
 layout: default
 title: A survey on motion prediction and risk assessment for intelligent vehicles
+author: Lefevre
+year: 2014
 ---
 # [A survey on motion prediction and risk assessment for intelligent vehicles](https://robomechjournal.springeropen.com/articles/10.1186/s40648-014-0001-z)
 

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Regularization With Stochastic Transformations and Perturbations for Deep Semi-Supervised Learning
+author: Sajjdai
+year: 2016
 ---
 
 # [Regularization With Stochastic Transformations and Perturbations for Deep Semi-Supervised Learning](https://arxiv.org/abs/1606.04586)
