@@ -83,7 +83,6 @@ May 2019
 - Machine Learning (EECS 445)
 - Deep Learning (EECS 498)
 - Artificial Intelligence (EECS 492)
-- Natural Language Processing (EECS 595 in progress)
 - Algorithms (EECS 586)
 - Operating Systems (EECS 482, EECS 582 in progress)
 - Web Systems (EECS 485)
@@ -97,7 +96,7 @@ May 2019
 
 - [Coupled matrix-matrix and coupled tensor-matrix completion methods for
     predicting drug–target interactions](https://doi.org/10.1093/bib/bbaa025)  
-    Maryam Bagherian, Renaid Kim, *Cheng Jiang*, Maureen A. Sartor, Harm
+    Maryam Bagherian, Renaid Kim, **Cheng Jiang**, Maureen A. Sartor, Harm
     Derksen, Kayvan Najarian
     *Briefings in Bioinformatics,* 2020
 - [Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of Traumatic
@@ -114,15 +113,15 @@ May 2019
     *39th Annual International Conference of the IEEE Engineering in Medicine
     and Biology Society (EMBC),* 2017
 
-<!--
 ### Teaching
 
-* Graduate Student Instructor, ENGR 101 Intro Computers & Programming<br>
-    *Fall 19, Winter 20*
--->
+* Graduate Student Instructor, ENGR 101 Intro Computers & Programming  
+    *Fall 19, Winter 20, Fall 20*
 
 ### Industry Experience
 
-- Incoming Research Intern, nuTonomy (Aptiv), Summer 2020
-- Vehicle Engineering Intern, General Motors, Summer 2018
+- Research Intern, Motional, Summer 2020  
+  Worked on multimodal motion prediction
+- Vehicle Engineering Intern, General Motors, Summer 2018  
+  Worked on AV behavior planner using a cognitive architecture
 
