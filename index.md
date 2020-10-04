@@ -94,6 +94,18 @@ May 2019
 
 ### Publications
 
+- [Automated Segmentation and Severity Analysis of Subdural Hematoma for
+  Patients with Traumatic Brain
+  Injuries](https://doi.org/10.3390/diagnostics10100773)  
+    Negar Farzaneh, Craig A. Williamson, **Cheng Jiang**, Ashok Srinivasan,
+    Jayapalli R. Bapuraj, Jonathan Gryak, Kayvan Najarian, and S. M. Reza
+    Soroushmehr  
+    *Diagnostics,* vol.10, no.10, 2020
+- [Prediction of cardiac arrhythmia using deterministic probabilistic
+  finite-state automata](https://doi.org/10.1016/j.bspc.2020.102200)  
+    Zhi Li, Harm Derksen, Jonathan Gryak, **Cheng Jiang**, Zijun Gao, Winston
+    Zhang, Hamid Ghanbari, Pujitha Gunaratne, Kayvan Najarian  
+    *Biomedical Signal Processing and Control,* vol. 63, 2020
 - [Coupled matrix-matrix and coupled tensor-matrix completion methods for
     predicting drug–target interactions](https://doi.org/10.1093/bib/bbaa025)  
     Maryam Bagherian, Renaid Kim, **Cheng Jiang**, Maureen A. Sartor, Harm
