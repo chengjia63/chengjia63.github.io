@@ -108,17 +108,18 @@ Derksen, Kayvan Najarian
 ---
 
 ### Teaching
-- **ENGR 101** Intro Computers & Programming  
-  Graduate Student Instructor - Fall 19, Winter 20, Fall 20
+[**ENGR 101** Intro Computers & Programming](https://engr101staff.github.io/engr101.org/)  
+Graduate Student Instructor - Fall 19, Winter 20, Fall 20
 
 ---
 
 ### Industry Experience
 
-- **Motional**  
-  Research Intern - Summer 2020  
-  Worked on multimodal motion prediction
-- **General Motors**  
-  Vehicle Engineering Intern - Summer 2018  
-  Worked on AV behavior planner using a cognitive architecture
+[**Motional**](https://motional.com)  
+Research Intern - Summer 2020  
+Worked on multimodal motion prediction
+
+**General Motors**  
+Vehicle Engineering Intern - Summer 2018  
+Worked on AV behavior planner using a cognitive architecture
 
