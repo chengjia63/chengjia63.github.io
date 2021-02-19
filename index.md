@@ -49,17 +49,18 @@ title: About
     </div>
     <div class="col-2">
         <p>
-        I am a master's student in Computer Science & Engineering (CSE) at the
+        I am a master's student in <a href="https://cse.engin.umich.edu">
+        Computer Science & Engineering (CSE) </a> at the
         University of Michigan (U-M). My interests are computer vision (CV) and
         machine learning (ML), especially their applications in medicine and
         robotics. I am a Graduate Student Instructor for ENGR 101, Introduction
         to Computers and Programming, where I teach first-year undergraduate
-        students programming concepts in MATLAB and C++. I am also a research
-        assistant at Michigan Medicine, where I leverage my knowledge in
-        artificial intelligence (AI) to develop software that may potentially
-        lead to better treatment of patients. During my undergraduate studies,
-        I was a part of Michigan Autonomous Aerial Vehicles (MAAV) and
-        Michigan Marching Band.
+        students programming concepts in MATLAB and C++. I am also a student
+        researcher at Machine Learning in NeuroSurgery Laboratory, where I
+        leverage my knowledge in artificial intelligence (AI) to develop
+        software that may potentially lead to better treatment of patients.
+        During my undergraduate studies, I was a part of Michigan Autonomous
+        Aerial Vehicles (MAAV) and Michigan Marching Band.
         </p>
     </div>
 </div>
