@@ -53,10 +53,11 @@ title: About
         Computer Science & Engineering (CSE) </a> at the
         University of Michigan. My interests are computer vision and
         machine learning, especially their applications in medicine and
-        robotics. I am a student researcher at Machine Learning in Neurosurgery
-        Laboratory, where I leverage my knowledge to develop software that may
-        potentially lead to better treatment of patients. During my
-        undergraduate studies, I was a part of Michigan Autonomous
+        robotics. I am a student researcher at <a
+        href="https://hollon.lab.medicine.umich.edu"> Machine Learning in
+        Neurosurgery Laboratory</a>, where I leverage my knowledge to develop
+        software that may potentially lead to better treatment of patients.
+        During my undergraduate studies, I was a part of Michigan Autonomous
         Aerial Vehicles (MAAV) and Michigan Marching Band.
         </p>
     </div>
