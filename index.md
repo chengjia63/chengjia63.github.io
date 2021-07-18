@@ -27,24 +27,6 @@ exclude: true
 
 ### Publications
 
-#### Conference Proceedings
-
-[**Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of Traumatic
-Brain Injuries**](https://ieeexplore.ieee.org/document/8983159)  
-**Cheng Jiang**, Jie Cao, Craig Williamson, Negar Farzaneh, Venkatakrishna
-Rajajee, Jonathan Gryak, Kayvan Najarian, and S.M.Reza Soroushmehr  
-*IEEE International Conference on Bioinformatics and Biomedicine (BIBM),*
-2019
-
-[**Automated subdural hematoma segmentation for traumatic brain injured (TBI)
-patients**](https://ieeexplore.ieee.org/document/8037505)  
-Negar Farzaneh, S.M.Reza Soroushmehr, Craig A. Williamson, **Cheng Jiang**,
-Ashok Srinivasan, Jayapalli R. Bapuraj, Kevin R. Ward, Frederick K. Korley,
-and Kayvan Najarian  
-*39th Annual International Conference of the IEEE Engineering in Medicine
-and Biology Society (EMBC),* 2017
-
-#### Journal Articles
 [**Automated Segmentation and Severity Analysis of Subdural Hematoma for
 Patients with Traumatic Brain
 Injuries**](https://doi.org/10.3390/diagnostics10100773)  
@@ -64,6 +46,21 @@ predicting drug–target interactions**](https://doi.org/10.1093/bib/bbaa025)
 Maryam Bagherian, Renaid Kim, **Cheng Jiang**, Maureen A. Sartor, Harm
 Derksen, Kayvan Najarian
 *Briefings in Bioinformatics,* 2020
+
+[**Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of Traumatic
+Brain Injuries**](https://ieeexplore.ieee.org/document/8983159)  
+**Cheng Jiang**, Jie Cao, Craig Williamson, Negar Farzaneh, Venkatakrishna
+Rajajee, Jonathan Gryak, Kayvan Najarian, and S.M.Reza Soroushmehr  
+*IEEE International Conference on Bioinformatics and Biomedicine (BIBM),*
+2019
+
+[**Automated subdural hematoma segmentation for traumatic brain injured (TBI)
+patients**](https://ieeexplore.ieee.org/document/8037505)  
+Negar Farzaneh, S.M.Reza Soroushmehr, Craig A. Williamson, **Cheng Jiang**,
+Ashok Srinivasan, Jayapalli R. Bapuraj, Kevin R. Ward, Frederick K. Korley,
+and Kayvan Najarian  
+*39th Annual International Conference of the IEEE Engineering in Medicine
+and Biology Society (EMBC),* 2017
 
 ---
 
