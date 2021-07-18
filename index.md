@@ -1,59 +1,21 @@
 ---
 layout: page
 title: About
+notitle: true
+exclude: true
 ---
 
-<style>
-/* Desktop: */
-.col-1 {
-    width: 20%;
-    text-align: center;
-}
-.col-2 {
-    width: 75%;
-    padding-right: 5%;
-    text-align: justify;
-}
-.profile {
-    width: 100%;
-    border-radius: 50%;
-}
-[class*="col-"] {
-    float: right;
-}
-
-@media only screen and (max-width: 800px) {
-    .col-1 {
-        padding-bottom: 16px;
-        text-align: center;
-    }
-    .col-2 {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .profile {
-        min-width: 192px;
-        width: 30%;
-        border-radius: 50%;
-    }
-    [class*="col-"] {
-        width: 100%;
-    }
-}
-
-</style>
-
-<div>
-    <div class="col-1">
-        <img src="/assets/images/chengjia.jpg" class="profile">
+<div class="tc-div">
+    <div class="tc-col-1">
+        <img src="/assets/images/chengjia.jpg" class="tc-profile">
     </div>
-    <div class="col-2">
-        <p>
-        I am a master's student in <a href="https://cse.engin.umich.edu">
-        Computer Science & Engineering (CSE) </a> at the
-        University of Michigan. My interests are computer vision and
-        machine learning, especially their applications in medicine and
-        robotics. I am a student researcher at <a
+    <div class="tc-col-2">
+         <p>
+        I am a PhD student in the <a href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics">
+        Department of Computational Medicine and Bioinformatics (DCMB) </a> at
+        the University of Michigan. My interests are in computer vision and
+        machine learning, especially representation learning and integrating
+        observations from multiple modalities. I am a student researcher at <a
         href="https://hollon.lab.medicine.umich.edu"> Machine Learning in
         Neurosurgery Laboratory</a>, where I leverage my knowledge to develop
         software that may potentially lead to better treatment of patients.
@@ -63,11 +25,10 @@ title: About
     </div>
 </div>
 
----
-
 ### Publications
 
 #### Conference Proceedings
+
 [**Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of Traumatic
 Brain Injuries**](https://ieeexplore.ieee.org/document/8983159)  
 **Cheng Jiang**, Jie Cao, Craig Williamson, Negar Farzaneh, Venkatakrishna

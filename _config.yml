@@ -28,6 +28,7 @@ theme: minima
 # their entries' file path in the `include:` list.
 #
 exclude:
+    - third_party.txt
     - .sass-cache/
     - .jekyll-cache/
     - gemfiles/
@@ -38,4 +39,3 @@ exclude:
     - vendor/cache/
     - vendor/gems/
     - vendor/ruby/
-    - bak/
