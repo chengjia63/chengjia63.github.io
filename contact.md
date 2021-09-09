@@ -1,5 +1,4 @@
 ---
-layout: page
+layout: contact
 title: Contact
 ---
-chengjia AT umich DOT edu
