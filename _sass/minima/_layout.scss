@@ -375,7 +375,7 @@
     float: right;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $on-palm) {
     .tc-col-1 {
         text-align: center;
     }
@@ -411,7 +411,7 @@
   border-radius: 15px;
   background-color:#eeeef0;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $on-palm) {
   .flexcard {
     display : flex;
     flex-direction : column;
@@ -449,7 +449,7 @@
   background-color:#eeeef0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $on-palm) {
   .info-card {
       float:left;
       display:block;
@@ -523,7 +523,7 @@
   border-radius: 15px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $on-palm) {
   .pubcard {
     display : flex;
     flex-direction : column;
