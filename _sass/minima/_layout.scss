@@ -350,6 +350,7 @@
     box-sizing: border-box;
   }
 
+  // Top card
 .tc-div{
   width: 100%;
 }
@@ -375,6 +376,7 @@
     float: right;
 }
 
+// Teaching
 @media only screen and (max-width: $on-palm) {
     .tc-col-1 {
         text-align: center;
@@ -438,27 +440,7 @@
   }
 }
 
-.industry-entry {
-  width: 100%;
-  text-align: left;
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
-  padding-right: $spacing-unit * 2;
-  padding-left: $spacing-unit * 2;
-  padding-top: $spacing-unit * 2;
-  padding-bottom: $spacing-unit * 2;
-  background-color:#eeeef0;
-}
-.company-name {
-  @include relative-font-size(1.25);
-
-  @media screen and (min-width: $on-large) {
-    @include relative-font-size(1.25);
-  }
-  font-weight: bold;
-  margin-top: $spacing-unit / 2;
-}
-
+// Papers
 .pubcard {
   display : flex;
   flex-direction : row;
@@ -469,10 +451,7 @@
   margin-left: 0%;
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
+  padding: $spacing-unit;
   background-color:default;
 }
 .pubcard .pubright {
@@ -482,10 +461,7 @@
   margin-left: 0%;
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
+  padding: $spacing-unit;
   background-color:default;
 }
 .pc-profile {
@@ -504,10 +480,7 @@
     margin-bottom: 0%;
     margin-right: 0%;
     margin-left: 0%;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
+    padding: $spacing-unit;
     background-color:#eeeef0;
   }
   .pubcard .pubright {
@@ -517,10 +490,7 @@
     margin-bottom: $spacing-unit;
     margin-right: 0%;
     margin-left: 0%;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
+    padding: $spacing-unit;
     background-color:#eeeef0;
   }
   .pc-profile {
@@ -549,7 +519,7 @@
   color: white;
 }
 
-
+// Awards
 .awardcard {
   display: flex;
   overflow-x: scroll;
@@ -563,10 +533,7 @@
   min-width: 40%;
   margin-right: $spacing-unit;
   margin-left: $spacing-unit;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
+  padding: $spacing-unit;
   border-radius: 15px;
   background-color:#eeeef0;
 }
@@ -582,16 +549,10 @@
     min-width: 80%;
     width: 80%;
     text-align: center;
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
-    margin-right: $spacing-unit;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
+    margin: $spacing-unit;
+    padding: $spacing-unit;
     border-radius: 15px;
     background-color:#eeeef0;
-
   }
 }
 .awardname{
@@ -602,8 +563,7 @@
   @include relative-font-size(1.25);
   font-weight: bold;
   color:#000000;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 .awarder{
@@ -614,8 +574,7 @@
   width: 100%;
   font-weight: bold;
   color:#696969;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 .awardtime{
   min-height: 30px;
@@ -624,6 +583,77 @@
   justify-content: center;
   width: 100%;
   color:#696969;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
+}
+
+// Industry
+.indcard {
+  display: flex;
+  overflow-x: scroll;
+  flex-direction: row;
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+}
+.indcard .indonecard {
+  flex-basis: max-content;
+  text-align: center;
+  min-width: 30%;
+  margin-right: $spacing-unit;
+  margin-left: $spacing-unit;
+  padding: $spacing-unit;
+  border-radius: 15px;
+  background-color:#eeeef0;
+}
+@media only screen and (max-width: $on-palm) {
+  .indcard {
+    display: flex;
+    flex-direction : row;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    overflow-x: scroll;
+  }
+  .indcard .indonecard {
+    min-width: 50%;
+    width: 50%;
+    text-align: center;
+    margin: $spacing-unit;
+    padding: $spacing-unit;
+    border-radius: 15px;
+    background-color:#eeeef0;
+  }
+}
+
+.industryemployer{
+  @include relative-font-size(1.25);
+
+  @media screen and (min-width: $on-large) {
+    @include relative-font-size(1.25);
+  }
+  margin-top: $spacing-unit / 2;
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color:#000000;
+  margin: 0px;
+}
+.industryjobtitle{
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+  color:#696969;
+  margin: 0px;
+}
+.industrytime{
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color:#696969;
+  margin: 0px;
 }
