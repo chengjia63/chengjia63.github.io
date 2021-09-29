@@ -29,124 +29,41 @@ layout: default
     </div>
 
     <h3 style="font-weight:bold;">Recent Publications</h3>
+    {% for i in site.data.publications %}
+    {% if i.highlight %}
     <div class="pubcard">
         <div class="publeft">
-            <img src="/assets/images/farzaneh2020automated.png" class="pc-profile">
+            <img src="/assets/images/{{ i.im }}.png" class="pc-profile">
         </div>
         <div class="pubright">
-            <p style="color:#009193; margin-bottom: 0px;"><b>MDPI DIAGNOSTICS | VOLUME 10 (2020)</b></p>
-            <a class="publication" href="https://doi.org/10.3390/diagnostics10100773"> Automated
-                Segmentation and Severity Analysis of Subdural Hematoma for Patients
-                with Traumatic Brain Injuries</a>
-            <p style="color:#696969;">
-                Negar Farzaneh, Craig A. Williamson, <b>Cheng Jiang,</b> Ashok
-                Srinivasan, Jayapalli R. Bapuraj, Jonathan Gryak, Kayvan Najarian, and
-                S. M. Reza Soroushmehr
-            </p>
+            <p style="color:#{{ i.color }}; margin: 0px; font-weight:bold">
+                {{ i.venue }}</p>
+            <a class="publication" href="{{ i.link }}">{{ i.title }}</a>
+            <p style="color:#696969;">{{ i.authors }} </p>
             <div class="pill">
-                <a href="https://doi.org/10.3390/diagnostics10100773">Paper</a>
+                {% for j in i.pills %}
+                <a href="{{ j.link }}">{{ j.title }}</a>
+                {% endfor %}
             </div>
         </div>
     </div>
-
-    <div class="pubcard">
-        <div class="publeft">
-            <img src="/assets/images/jiang2019midline.png" class="pc-profile">
-        </div>
-        <div class="pubright">
-            <p style="color:#FF9300; margin-bottom: 0px;"><b>IEEE BIBM | 2019</b></p>
-            <a class="publication" href="https://ieeexplore.ieee.org/document/8983159">
-                Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of
-                Traumatic Brain Injuries</a>
-            <p style="color:#696969;">
-                <b>Cheng Jiang,</b> Jie Cao, Craig Williamson, Negar Farzaneh,
-                Venkatakrishna Rajajee, Jonathan Gryak, Kayvan Najarian, and S.M.Reza
-                Soroushmehr
-            </p>
-            <div class="pill">
-                <a class="pill" href="https://ieeexplore.ieee.org/document/8983159">Paper</a>
-                <a class="pill" href="https://pubmed.ncbi.nlm.nih.gov/33569243/">PubMed</a>
-                <a class="pill" href="/assets/posters/jiang2019midline.pdf">Poster</a>
-            </div>
-        </div>
-    </div>
-    <div class="pill">
-        <a style="background-color: #1756a9" href="/publications">More Publications</a>
-    </div>
-
+    {% endif %}
+    {% endfor %}
 
     <h3 style="font-weight:bold;">Awards</h3>
     <div class="awards">
+        {% for i in site.data.awards %}
         <div class="awardcard">
             <div class="awardname">
-                <a class="award" href="https://bids-tp.umich.edu/home">Biomedical Informatics<br>&amp; Data
-                    Science (BIDS-TP) Fellowship</a>
+                <a class="award" href="{{ i.link }}">{{ i.award }}</a>
             </div>
             <hr style="height:2px;border-width:0;color:#696969;background-color:#696969">
-            <div class="awarder">
-                <div>
-                    University of Michigan<br>
-                    <a href="https://reporter.nih.gov/project-details/10204560">NIH T32 Grant</a>
-                </div>
-            </div>
-            <div class="awardtime">
-                August 2021
-            </div>
+            <div class="awarder">{{ i.awarder }}</div>
+            <div class="awardtime">{{ i.time }}</div>
         </div>
-        <div class="awardcard">
-            <div class="awardname">
-                <a class="award"
-                    href="https://cse.engin.umich.edu/stories/six-cse-students-recognized-by-nsf-graduate-research-fellowship-program">Honorable
-                    Mention</a>
-            </div>
-            <hr style="height:2px;border-width:0;color:#696969;background-color:#696969">
-            <div class="awarder">
-                NSF Graduate Research<br>Fellowships Program (GRFP)
-            </div>
-            <div class="awardtime">
-                March 2021
-            </div>
-        </div>
-        <div class="awardcard">
-            <div class="awardname">
-                <a class="award" href="https://www.michiganmarchingband.com/endowed-funds">Donald R.
-                    Shepherd<br>Graduate Fellowship</a>
-            </div>
-            <hr style="height:2px;border-width:0;color:#696969;background-color:#696969">
-            <div class="awarder">
-                University of Michigan<br>Marching Band
-            </div>
-            <div class="awardtime">
-                May 2019
-            </div>
-        </div>
-        <div class="awardcard">
-            <div class="awardname">
-                <a class="award"
-                    href="https://ece.engin.umich.edu/stories/2018-19-undergraduate-student-awards">Outstanding<br>Research
-                    Award</a>
-            </div>
-            <hr style="height:2px;border-width:0;color:#696969;background-color:#696969">
-            <div class="awarder">
-                University of Michigan<br>EECS Department
-            </div>
-            <div class="awardtime">
-                March 2019
-            </div>
-        </div>
-        <div class="awardcard">
-            <div class="awardname">
-                <a class="award" href="https://honors.umich.edu/awards.php">James B. Angell Scholar</a>
-            </div>
-            <hr style="height:2px;border-width:0;color:#696969;background-color:#696969">
-            <div class="awarder">
-                University of Michigan
-            </div>
-            <div class="awardtime">
-                March 2017
-            </div>
-        </div>
+        {% endfor %}
     </div>
+
     <h3 style="font-weight:bold;">Teaching</h3>
     <div class="teaching">
         <div class="classcard">
@@ -164,6 +81,7 @@ layout: default
             </div>
         </div>
     </div>
+
     <h3 style="font-weight:bold;">Internships</h3>
     <div class="industry">
         {% for i in site.data.internships %}
