@@ -34,7 +34,7 @@
   pills:
     - title: Paper
       link: https://doi.org/10.3390/diagnostics10100773
-  highlight: True
+  recent: True
 - im: jiang2019midline
   color: FF9300
   venue: IEEE BIBM | 2019
@@ -51,7 +51,7 @@
       link: https://pubmed.ncbi.nlm.nih.gov/33569243/
     - title: Poster
       link: /assets/posters/jiang2019midline.pdf
-  highlight: True
+  recent: True
 - im: farzaneh2016automated
   color: 008F00
   venue: IEEE EMBC | 2017
