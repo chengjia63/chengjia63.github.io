@@ -68,7 +68,10 @@ img {
   vertical-align: middle;
 }
 
-
+img.visabs {
+  margin-top: calc(#{$spacing-unit} * 4);
+  margin-bottom: calc(#{$spacing-unit} * 4);
+}
 
 /**
  * Figures
@@ -137,7 +140,6 @@ a.publication, a.award {
   color: #000000;
   text-decoration: none;
   font-weight: 600;
-  @include relative-font-size(1.25);
 
   &:visited {
     color: #000000;
@@ -157,13 +159,62 @@ a.publication, a.award {
   }
 }
 a.publication{
+  @include relative-font-size(1.25);
   font-weight: 600;
 }
 a.award {
+  @include relative-font-size(1.5);
   font-weight: bold;
 }
 
+a.pill, a.morepill {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 100px;
+}
 
+a.pill{
+  margin: $spacing-unit / 2;
+  background-color: #000000;
+  color: white;
+  padding-top: $spacing-unit / 4;
+  padding-bottom: $spacing-unit / 4;
+  padding-left: $spacing-unit;
+  padding-right:$spacing-unit;
+  font-size: medium;
+
+  &:visited {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #333333;
+  }
+}
+
+a.morepill {
+  background-color: $link-base-color;
+  color: white;
+  margin: 0px;
+  font-size: large;
+  padding-top: $spacing-unit * 1;
+  padding-bottom: $spacing-unit * 1;
+  padding-left: $spacing-unit * 2;
+  padding-right:$spacing-unit * 2;
+
+  &:visited {
+    color: #ffffff;
+    background-color: $link-base-color;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #333333;
+  }
+}
 
 /**
  * Blockquotes

@@ -6,18 +6,16 @@ layout: default
     {% for i in site.data.publications %}
     <div class="pubcard">
         <div class="publeft">
-            <img src="/assets/images/{{ i.im }}.png" class="pc-profile">
+            <img src="/assets/images/{{ i[0] }}.png" class="pc-profile">
         </div>
         <div class="pubright">
-            <p style="color:#{{ i.color }}; margin: 0px; font-weight:bold">
-                {{ i.venue }}</p>
-            <a class="publication" href="{{ i.link }}">{{ i.title }}</a>
-            <p style="color:#696969;">{{ i.authors }} </p>
-            <div class="pill">
-                {% for j in i.pills %}
-                <a href="{{ j.link }}">{{ j.title }}</a>
-                {% endfor %}
-            </div>
+            <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
+                {{ i[1].venue }}</p>
+            <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
+            <p style="color:#696969;">{{ i[1].authors }} </p>
+            {% for j in i[1].pills %}
+            <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
+            {% endfor %}
         </div>
     </div>
     {% endfor %}

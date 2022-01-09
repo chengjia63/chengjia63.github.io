@@ -1,12 +1,12 @@
-- employer: APPLE
+- employer: Apple
   color: 000000
-  title: Machine Learning<br>Research Intern
+  title: Machine Learning Research Intern
   time: Summer 2021
-- employer: MOTIONAL
+- employer: Motional
   color: 9437FF
   title: Research Intern
   time: Summer 2020
-- employer: GENERAL MOTORS
+- employer: General Motors
   color: 0433FF
   title: Vehicle Engineering Intern
   time: Summer 2018

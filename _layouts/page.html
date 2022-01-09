@@ -3,11 +3,24 @@ layout: default
 ---
 <article class="post">
 
-  {%- if page.notitle != true -%}
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p style="color:#{{ site.data.publications[page.title].color }};
+      margin: 0px; font-weight:bold">
+      {{ site.data.publications[page.title].venue }}</p>
+    <h2 style="font-weight: 600;">
+      {{ site.data.publications[page.title].title }}
+    </h2>
+    <p style="color:#696969;">{{ site.data.publications[page.title].authors }} </p>
   </header>
-  {%- endif -%}
+
+  {{ site.data.publications[page.title].author }}
+
+  {% for j in site.data.publications[page.title].pills %}
+  <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
+  {% endfor %}
+
+  <hr class="pagediv">
+
   <div class="post-content">
     {{ content }}
   </div>

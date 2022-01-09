@@ -1,7 +1,9 @@
 <head>
   <meta charset="utf-8">
 
-  {%- if page.notitle != true -%}
+  {%- if page.ispub == true -%}
+  <title>{{ site.data.publications[page.title].title }}</title>
+  {%- elsif page.notitle != true -%}
   <title>{{ site.title }} | {{ page.title }}</title>
   {%- else -%}
   <title>{{ site.title }}</title>

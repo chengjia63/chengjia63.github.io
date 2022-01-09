@@ -1,6 +1,6 @@
-- im: bagherian2020coupled
+bagherian2020coupled:
   color: 0096FF
-  venue: BRIEFINGS IN BIOINFORMATICS | VOLUME 22 (2021)
+  venue: BRIEFINGS IN BIOINFORMATICS | 2021
   link: https://doi.org/10.1093/bib/bbaa025
   title: "Coupled Matrix-Matrix and Coupled Tensor-Matrix Completion Methods for
     Predicting Drug-Target Interactions"
@@ -10,10 +10,10 @@
     - title: Paper
       link: https://doi.org/10.1093/bib/bbaa025
     - title: PubMed
-      link: https://pubmed.ncbi.nlm.nih.gov/32186716/
-- im: li2020prediction
+      link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7986629/
+li2020prediction:
   color: 941100
-  venue: BIOMEDICAL SIGNAL PROCESSING & CONTROL | VOLUME 63 (2021)
+  venue: BIOMEDICAL SIGNAL PROCESSING & CONTROL | 2021
   link: https://doi.org/10.1016/j.bspc.2020.102200
   title: "Prediction of Cardiac Arrhythmia Using Deterministic Probabilistic
     Finite-state Automata"
@@ -22,9 +22,9 @@
   pills:
     - title: Paper
       link: https://doi.org/10.1016/j.bspc.2020.102200
-- im: farzaneh2020automated
+farzaneh2020automated:
   color: 009193
-  venue: MDPI DIAGNOSTICS | VOLUME 10 (2020)
+  venue: MDPI DIAGNOSTICS | 2020
   link: https://doi.org/10.3390/diagnostics10100773
   title: "Segmentation and Severity Analysis of Subdural Hematoma for Patients
     with Traumatic Brain Injuries"
@@ -34,11 +34,13 @@
   pills:
     - title: Paper
       link: https://doi.org/10.3390/diagnostics10100773
+    - title: PubMed
+      link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7600198/
   recent: True
-- im: jiang2019midline
+jiang2019midline:
   color: FF9300
-  venue: IEEE BIBM | 2019
-  link: https://ieeexplore.ieee.org/document/8983159
+  venue: "IEEE BIBM | 2019"
+  link: "/publications/jiang2019midline"
   title: "Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of
     Traumatic Brain Injuries"
   authors: "<b>Cheng Jiang,</b> Jie Cao, Craig Williamson, Negar Farzaneh,
@@ -47,12 +49,12 @@
   pills:
     - title: Paper
       link: https://ieeexplore.ieee.org/document/8983159
-    - title: Pubmed
-      link: https://pubmed.ncbi.nlm.nih.gov/33569243/
+    - title: PubMed
+      link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7871460/
     - title: Poster
       link: /assets/posters/jiang2019midline.pdf
   recent: True
-- im: farzaneh2016automated
+farzaneh2016automated:
   color: 008F00
   venue: IEEE EMBC | 2017
   link: https://ieeexplore.ieee.org/document/8037505
@@ -64,5 +66,5 @@
   pills:
     - title: Paper
       link: https://ieeexplore.ieee.org/document/8037505
-    - title: Pubmed
+    - title: PubMed
       link: https://pubmed.ncbi.nlm.nih.gov/29060546/

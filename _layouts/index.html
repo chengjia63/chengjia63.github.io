@@ -30,39 +30,37 @@ layout: default
 
     <h3 style="font-weight:bold;">Recent Publications</h3>
     {% for i in site.data.publications %}
-    {% if i.recent %}
+    {% if i[1].recent %}
     <div class="pubcard">
         <div class="publeft">
-            <img src="/assets/images/{{ i.im }}.png" class="pc-profile">
+            <img src="/assets/images/{{ i[0] }}.png" class="pc-profile">
         </div>
         <div class="pubright">
-            <p style="color:#{{ i.color }}; margin: 0px; font-weight:bold">
-                {{ i.venue }}</p>
-            <a class="publication" href="{{ i.link }}">{{ i.title }}</a>
-            <p style="color:#696969;">{{ i.authors }} </p>
-            <div class="pill">
-                {% for j in i.pills %}
-                <a href="{{ j.link }}">{{ j.title }}</a>
-                {% endfor %}
-            </div>
+            <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
+                {{ i[1].venue }}</p>
+            <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
+            <p style="color:#696969;">{{ i[1].authors }} </p>
+
+            {% for j in i[1].pills %}
+            <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
+            {% endfor %}
+
         </div>
     </div>
     {% endif %}
     {% endfor %}
-    <div class="pill">
-        <a style="background-color: #1756a9" href="/publications">More Publications</a>
+    <div class="pilldiv">
+        <a class="morepill" href="/publications">More Publications</a>
     </div>
 
     <h3 style="font-weight:bold;">Awards</h3>
     <div class="awards">
         {% for i in site.data.awards %}
         <div class="awardcard">
-            <div class="awardname">
+            <p class="awardname">
                 <a class="award" href="{{ i.link }}">{{ i.award }}</a>
-            </div>
-            <hr class="cardiv">
-            <div class="awarder">{{ i.awarder }}</div>
-            <div class="awardtime">{{ i.time }}</div>
+            </p>
+            <p class="awarder">{{ i.awarder }} | {{ i.time }}</p>
         </div>
         {% endfor %}
     </div>
@@ -70,18 +68,20 @@ layout: default
     <h3 style="font-weight:bold;">Teaching</h3>
     <div class="teaching">
         <div class="classcard">
+            <p class="tinstu">ENGR 101 @ University of Michigan</p>
             <div class="tclassname"><a
                     href="https://adue.engin.umich.edu/engineering-101-introduction-to-computers-and-programming/">
-                    Intro Computers & Programming
+                    Introduction to Computers & Programming
                 </a></div>
-            <div class="tinstu">ENGR 101 @ U-M</div>
             <hr class="cardiv">
-            <div class="ttitle">Graduate Student Instructor</div>
-            <div class="ttime">
-                <p>Fall 19 | Winter 20 | <a href="https://engr101staff.github.io/engr101.org/archive/f20_site.html">Fall
-                        20</a> | <a href="https://engr101staff.github.io/engr101.org/archive/w21_site.html">Winter
-                        21</a></p>
-            </div>
+            <p class="ttime">
+                <a href="https://engr101staff.github.io/engr101.org/archive/w21_site.html">
+                    Winter 2021</a> |
+                <a href="https://engr101staff.github.io/engr101.org/archive/f20_site.html">
+                    Fall 2020</a> <br>
+                Winter 2020 |
+                Fall 2019
+            </p>
         </div>
     </div>
 
@@ -89,12 +89,11 @@ layout: default
     <div class="industry">
         {% for i in site.data.internships %}
         <div class="indcard">
-            <div class="indemp" style="color:#{{ i.color }};">
+            <p class="indtitle">{{ i.time }}</p>
+            <p class="indemp" style="color:#{{ i.color }};">
                 {{ i.employer }}
-            </div>
-            <hr class="cardiv">
-            <div class="indtitle">{{ i.title }}</div>
-            <div class="indtime">{{ i.time }}</div>
+            </p>
+            <p class="indtitle">{{ i.title }}</p>
         </div>
         {% endfor %}
     </div>
