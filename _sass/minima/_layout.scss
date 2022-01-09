@@ -420,7 +420,7 @@
 }
 .pc-profile {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 @media only screen and (max-width: $on-palm) {
   .pubcard {
@@ -452,8 +452,8 @@
     padding: $spacing-unit;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     /*
     border-top: 0px;
     border-bottom: 2px solid;
@@ -465,8 +465,8 @@
   .pc-profile {
     min-width: 160px;
     width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
@@ -484,7 +484,7 @@
   text-align: center;
   margin:  calc(#{$spacing-unit} / 2);
   padding: $spacing-unit;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color:#f2f2f3;
 }
 .awards .awardcard{
@@ -507,13 +507,12 @@
   }
   .awards .awardcard, .industry .indcard, .teaching .classcard {
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: calc(#{$spacing-unit} / 2);
     margin-bottom: calc(#{$spacing-unit} / 2);
     background-color:#eeeef0;
-    border-radius: 0px;
   }
   .awards .awardcard {
     min-width: 100%;
