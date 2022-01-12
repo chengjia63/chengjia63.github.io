@@ -533,12 +533,24 @@
   width: 100%;
   margin: 0px;
 }
-.indemp, .indtitle
-.tclassname, .tinstu, .ttime{
-  align-items: center;
+.indemp, .indtitle,
+.tclassname, .tinstu{
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0px;
+}
+.ttime{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  min-height: 48px;
+  font-weight: bold;
+  color:#696969;
+  margin:0px;
 }
 .awardname {
   @include relative-font-size(1.50);
@@ -555,6 +567,9 @@
   color:#000000;
   margin-top: calc(#{$spacing-unit});
   margin-bottom: calc(#{$spacing-unit});
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .indtitle {
   color:#696969;
@@ -562,21 +577,18 @@
   margin:0px;
 }
 .tclassname {
-  @include relative-font-size(1.50);
-  font-weight: bold;
-  color:#000000;
-  margin-top: calc(#{$spacing-unit});
-  // min-height: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 80px;
 }
 .tinstu{
+  display: flex;
   font-weight: bold;
   color:#696969;
-  margin:0px;
-}
-.ttime {
-  font-weight: bold;
-  color:#696969;
-  margin:0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: calc(#{$spacing-unit});
 }
 
 hr.cardiv {
@@ -584,6 +596,8 @@ hr.cardiv {
     border-width:0;
     color:#696969;
     background-color:#696969;
+    margin-top: calc(#{$spacing-unit});
+    margin-bottom: calc(#{$spacing-unit});
 }
 
 hr.pagediv {
