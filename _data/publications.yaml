@@ -1,3 +1,21 @@
+jiang2021rapid:
+  color: 941100
+  venue: NEUROSURGERY | 2022
+  link: /publications/jiang2021rapid
+  title: "Rapid automated analysis of skull base tumor specimens using
+    intraoperative optical imaging and artificial intelligence"
+  authors: "<b>Cheng Jiang,</b> Abhishek Bhattacharya, Joseph Linzey, Rushikesh
+      Joshi, Sung Jik Cha, Sudharsan Srinivasan, Daniel Alber, Akhil Kondepudi,
+      Esteban Urias, Balaji Pandian, Wajd Al-Holou, Steve Sullivan, B. Gregory
+      Thompson, Jason Heth, Chris Freudiger, Siri Khalsa, Donato Pacione, John
+      G. Golfinos, Sandra Camelo-Piragua, Daniel A. Orringer, Honglak Lee, Todd
+      Hollon"
+  pills:
+    - title: Paper
+      link: https://journals.lww.com/neurosurgery/Abstract/9900/Rapid_Automated_Analysis_of_Skull_Base_Tumor.184.aspx
+    - title: Arxiv
+      link: https://arxiv.org/abs/2108.03555
+  recent: True
 bagherian2020coupled:
   color: 0096FF
   venue: BRIEFINGS IN BIOINFORMATICS | 2021
