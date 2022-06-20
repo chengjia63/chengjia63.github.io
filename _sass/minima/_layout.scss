@@ -489,15 +489,15 @@
 }
 .awards .awardcard{
   min-width: calc(100% - (#{$spacing-unit}));
-  width: calc(100% - (#{$spacing-unit}));
+  max-width: calc(100% - (#{$spacing-unit}));
 }
 .industry .indcard {
   min-width: calc(50% - (#{$spacing-unit}));
-  width: calc(50% - (#{$spacing-unit}));
+  max-width: calc(50% - (#{$spacing-unit}));
 }
 .teaching .classcard {
   min-width: calc(50% - (#{$spacing-unit}));
-  width: calc(50% - (#{$spacing-unit}));
+  max-width: calc(50% - (#{$spacing-unit}));
 }
 @media only screen and (max-width: $on-palm) {
   .awards, .industry, .teaching {
