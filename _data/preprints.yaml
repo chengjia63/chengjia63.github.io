@@ -1,0 +1,40 @@
+hollon2022ai:
+    color: 000000
+    venue: 2022
+    link: https://deepglioma.mlins.org/
+    title: "AI-based molecular classification of diffuse gliomas using rapid,
+        label-free optical imaging"
+    authors: "Todd Hollon, <b>Cheng Jiang,</b> Asadur Chowdury, Mustafa Nasir-Moin,
+        Akhil Kondepudi, Alexander Aabedi, Arjun Adapa, Wajd Al-Holou,
+        Jason Heth, Oren Sagher, Pedro Lowenstein, Maria Castro,
+        Lisa Irina Wadiura, Georg Widhalm, Volker Neuschmelting,
+        David Reinecke, Niklas von Spreckelsen, Mitchel Berger,
+        Shawn Hervey-Jumper, John Golfinos, Matija Snuderl,
+        Sandra Camelo-Piragua, Christian Freudiger, Honglak Lee, and
+        Daniel Orringer"
+    pills:
+        - title: Interactive Demo
+          link: https://deepglioma.mlins.org/
+        - title: Preprint
+          link: https://doi.org/10.21203/rs.3.rs-1930236/v1
+        - title: Github
+          link: https://github.com/MLNeurosurg/deepglioma
+    recent: True
+jiang2022opensrh:
+  color: 000000
+  venue: 2022
+  link: https://opensrh.mlins.org/
+  title: "OpenSRH: optimizing brain tumor surgery using intraoperative
+      stimulated Raman histology"
+  authors: "<b>Cheng Jiang<sup>*</sup>,</b> Asadur Chowdury<sup>*</sup>,
+      Xinhai Hou<sup>*</sup>, Akhil Kondepudi, Christian W. Freudiger, Kyle
+      Conway, Sandra Camelo-Piragua, Daniel A. Orringer, Honglak Lee, and Todd
+      C. Hollon"
+  pills:
+    - title: Website
+      link: https://opensrh.mlins.org/
+    - title: arXiv
+      link: https://arxiv.org/abs/2206.08439/
+    - title: Github
+      link: https://github.com/MLNeurosurg/opensrh
+  recent: True

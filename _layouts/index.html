@@ -52,6 +52,22 @@ layout: default
     <div class="pilldiv">
         <a class="morepill" href="/publications">More Publications</a>
     </div>
+    
+    <h3 style="font-weight:bold;">Preprints</h3>
+    {% for i in site.data.preprints %}
+    {% if i[1].recent %}
+    <div class="pubcard">
+        <div class="pubpre">
+            <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
+            <p style="color:#696969;">{{ i[1].authors }} ({{ i[1].venue }})</p>
+
+            {% for j in i[1].pills %}
+            <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
 
     <h3 style="font-weight:bold;">Teaching</h3>
     <div class="teaching">
