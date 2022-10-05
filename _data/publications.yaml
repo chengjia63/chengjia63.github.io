@@ -1,3 +1,21 @@
+jiang2022opensrh:
+  color: 531B93
+  venue: NEURIPS DATASETS & BENCHMARKS | 2022
+  link: https://opensrh.mlins.org/
+  title: "OpenSRH: optimizing brain tumor surgery using intraoperative
+      stimulated Raman histology"
+  authors: "<b>Cheng Jiang<sup>*</sup>,</b> Asadur Chowdury<sup>*</sup>,
+      Xinhai Hou<sup>*</sup>, Akhil Kondepudi, Christian W. Freudiger, Kyle
+      Conway, Sandra Camelo-Piragua, Daniel A. Orringer, Honglak Lee, and Todd
+      C. Hollon"
+  pills:
+    - title: Website
+      link: https://opensrh.mlins.org/
+    - title: arXiv
+      link: https://arxiv.org/abs/2206.08439/
+    - title: Github
+      link: https://github.com/MLNeurosurg/opensrh
+  recent: True
 jiang2021rapid:
   color: 941100
   venue: NEUROSURGERY | 2022
