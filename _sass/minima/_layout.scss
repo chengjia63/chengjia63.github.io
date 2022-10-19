@@ -50,7 +50,7 @@
     padding-top: 10px;
     text-align: center;
 
-    > svg path {
+    >svg path {
       fill: $border-color-03;
     }
   }
@@ -64,12 +64,12 @@
     cursor: pointer;
   }
 
-  input ~ .trigger {
+  input~.trigger {
     clear: both;
     display: none;
   }
 
-  input:checked ~ .trigger {
+  input:checked~.trigger {
     display: block;
     padding-bottom: 5px;
   }
@@ -84,6 +84,7 @@
     &:not(:last-child) {
       margin-right: 0;
     }
+
     margin-left: 20px;
     font-weight: normal;
   }
@@ -102,7 +103,7 @@
       display: none;
     }
 
-    input ~ .trigger {
+    input~.trigger {
       display: block;
     }
 
@@ -113,6 +114,7 @@
       &:not(:last-child) {
         margin-right: 20px;
       }
+
       margin-left: auto;
     }
   }
@@ -219,7 +221,7 @@
   margin-left: 0;
   list-style: none;
 
-  > li {
+  >li {
     margin-bottom: $spacing-unit;
   }
 }
@@ -257,8 +259,17 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
-  h1, h2, h3 { margin-top: $spacing-unit * 2 }
-  h4, h5, h6 { margin-top: $spacing-unit }
+  h1,
+  h2,
+  h3 {
+    margin-top: $spacing-unit * 2
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin-top: $spacing-unit
+  }
 
   h2 {
     @include relative-font-size(1.75);
@@ -283,6 +294,7 @@
   h5 {
     @include relative-font-size(1.125);
   }
+
   h6 {
     @include relative-font-size(1.0625);
   }
@@ -292,15 +304,23 @@
 .social-media-list {
   display: table;
   margin: 0 auto;
+
   li {
     float: left;
     margin: 5px 10px 5px 0;
-    &:last-of-type { margin-right: 0 }
+
+    &:last-of-type {
+      margin-right: 0
+    }
+
     a {
       display: block;
       padding: $spacing-unit / 4;
       border: 1px solid $border-color-01;
-      &:hover { border-color: $border-color-02 }
+
+      &:hover {
+        border-color: $border-color-02
+      }
     }
   }
 }
@@ -313,12 +333,16 @@
 .pagination {
   margin-bottom: $spacing-unit;
   @extend .social-media-list;
+
   li {
-    a, div {
+
+    a,
+    div {
       min-width: 41px;
       text-align: center;
       box-sizing: border-box;
     }
+
     div {
       display: block;
       padding: $spacing-unit / 4;
@@ -346,99 +370,127 @@
 
 /* Desktop: */
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  // Top card
-.tc-div{
+// Top card
+.tc-div {
   width: 100%;
 }
+
 .tc-col-1 {
-    float: left;
-    width: 25%;
-    text-align: center;
-    padding-left: $spacing-unit * 2;
-    padding-bottom: $spacing-unit * 2;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-left: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
 }
+
 .tc-col-2 {
-    float:left;
-    width: 75%;
-    text-align: justify;
-    padding-right: $spacing-unit * 2;
-    padding-bottom: $spacing-unit * 2;
+  float: left;
+  width: 75%;
+  text-align: justify;
+  padding-right: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
 }
+
 .tc-profile {
-    width: 100%;
-    border-radius: 20%;
+  width: 100%;
+  border-radius: 20%;
 }
+
 [class*="tc-col-"] {
-    float: right;
+  float: right;
 }
 
 // Teaching
 @media only screen and (max-width: $on-palm) {
-    .tc-col-1 {
-        text-align: center;
-    }
-    .tc-col-2 {
-        text-align: justify;
-    }
-    .tc-profile {
-        min-width: 160px;
-        width: 20%;
-        border-radius: 20%;
-    }
-    [class*="tc-col-"] {
-        width: 100%;
-        padding-right: $spacing-unit * 2;
-        padding-left: $spacing-unit * 2;
-        padding-bottom: $spacing-unit * 2;
-    }
+  .tc-col-1 {
+    text-align: center;
+  }
+
+  .tc-col-2 {
+    text-align: justify;
+  }
+
+  .tc-profile {
+    min-width: 160px;
+    width: 20%;
+    border-radius: 20%;
+  }
+
+  [class*="tc-col-"] {
+    width: 100%;
+    padding-right: $spacing-unit * 2;
+    padding-left: $spacing-unit * 2;
+    padding-bottom: $spacing-unit * 2;
+  }
 }
 
 
 
 // Papers
 .pubcard {
-  display : flex;
-  flex-direction : row;
+  display: flex;
+  flex-direction: row;
 }
-.pubcard .publeft, .pubcard .pubright, .pubcard .pubpre {
+
+.pubcard .publeft,
+.pubcard .pubright,
+.pubcard .pubpre {
   margin-right: 0%;
   margin-left: 0%;
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
   padding: $spacing-unit;
-  background-color:default;
+  background-color: default;
 }
+
 .pubcard .publeft {
-  width: 40%;
+  width: 30%;
+  background-color: #eeeef0;
+  border-radius: 10px 0 0 10px;
+  padding: $spacing-unit;
+  //justify-items: center;
+  align-items: center;
+  display: flex;
 }
+
 .pubcard .pubright {
-  width: 60%;
+  width: 70%;
   text-align: left;
+  background-color: #eeeef0;
+  border-radius: 0 10px 10px 0;
 }
+
 .pubcard .pubpre {
   width: 100%;
   text-align: left;
 }
+
 .pc-profile {
   width: 100%;
-  border-radius: 10px;
+  //border-radius: 10px 0 0 10px;
+  //border-radius: 10px;
 }
+
 @media only screen and (max-width: $on-palm) {
   .pubcard {
-    display : flex;
-    flex-direction : column;
+    display: flex;
+    flex-direction: column;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
   }
-  .pubcard .publeft, .pubcard .pubright, .pubcard .pubpre {
+
+  .pubcard .publeft,
+  .pubcard .pubright,
+  .pubcard .pubpre {
     width: 100%;
     margin-right: 0%;
     margin-left: 0%;
-    background-color:#eeeef0;
+    background-color: #eeeef0;
   }
+
   .pubcard .publeft {
     text-align: center;
     margin-top: $spacing-unit;
@@ -449,6 +501,7 @@
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
+
   .pubcard .pubright {
     text-align: left;
     margin-top: 0%;
@@ -466,6 +519,7 @@
     border-color: #696969;
     */
   }
+
   .pubcard .pubpre {
     text-align: left;
     margin-top: $spacing-unit;
@@ -473,86 +527,108 @@
     padding: $spacing-unit;
     border-radius: 10px;
   }
+
   .pc-profile {
     min-width: 160px;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 10px 10px 0 0;
   }
 }
 
 // cards
-.awards, .industry, .teaching {
+.awards,
+.industry,
+.teaching {
   display: flex;
   flex-wrap: wrap;
   //overflow-x: scroll;
   flex-direction: row;
 }
-.awards .awardcard, .industry .indcard, .teaching .classcard {
+
+.awards .awardcard,
+.industry .indcard,
+.teaching .classcard {
   flex-basis: max-content;
   text-align: center;
-  margin:  calc(#{$spacing-unit} / 2);
+  margin: calc(#{$spacing-unit} / 2);
   padding: $spacing-unit;
   border-radius: 10px;
-  background-color:#f2f2f3;
+  background-color: #f2f2f3;
 }
-.awards .awardcard{
+
+.awards .awardcard {
   min-width: calc(100% - (#{$spacing-unit}));
   max-width: calc(100% - (#{$spacing-unit}));
 }
+
 .industry .indcard {
   min-width: calc(50% - (#{$spacing-unit}));
   max-width: calc(50% - (#{$spacing-unit}));
 }
+
 .teaching .classcard {
   min-width: calc(50% - (#{$spacing-unit}));
   max-width: calc(50% - (#{$spacing-unit}));
 }
+
 @media only screen and (max-width: $on-palm) {
-  .awards, .industry, .teaching {
+
+  .awards,
+  .industry,
+  .teaching {
     display: flex;
-    flex-direction : row;
+    flex-direction: row;
     padding: $spacing-unit;
   }
-  .awards .awardcard, .industry .indcard, .teaching .classcard {
+
+  .awards .awardcard,
+  .industry .indcard,
+  .teaching .classcard {
     text-align: center;
     border-radius: 10px;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: calc(#{$spacing-unit} / 2);
     margin-bottom: calc(#{$spacing-unit} / 2);
-    background-color:#eeeef0;
+    background-color: #eeeef0;
   }
+
   .awards .awardcard {
     min-width: 100%;
     width: 100%;
   }
+
   .industry .indcard {
     min-width: 100%;
     width: 100%;
   }
+
   .teaching .classcard {
     min-width: 100%;
     width: 100%;
   }
 }
-.awardname, .awarder{
+
+.awardname,
+.awarder {
   text-align: left;
   text-justify: left;
   width: 100%;
   margin: 0px;
 }
-.indemp, .indtitle,
-.tclassname, .tinstu{
+
+.indemp,
+.indtitle,
+.tclassname,
+.tinstu {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin: 0px;
 }
-.ttime{
+
+.ttime {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -560,42 +636,48 @@
   margin: 0px;
   min-height: 48px;
   font-weight: bold;
-  color:#696969;
-  margin:0px;
+  color: #696969;
+  margin: 0px;
 }
+
 .awardname {
   @include relative-font-size(1.50);
   font-weight: bold;
-  color:#000000;
+  color: #000000;
 }
+
 .awarder {
-  color:#696969;
+  color: #696969;
   font-weight: bold;
 }
+
 .indemp {
   @include relative-font-size(1.75);
   font-weight: bold;
-  color:#000000;
+  color: #000000;
   margin-top: calc(#{$spacing-unit});
   margin-bottom: calc(#{$spacing-unit});
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .indtitle {
-  color:#696969;
+  color: #696969;
   font-weight: bold;
-  margin:0px;
+  margin: 0px;
 }
+
 .tclassname {
   margin-top: 0px;
   margin-bottom: 0px;
   min-height: 80px;
 }
-.tinstu{
+
+.tinstu {
   display: flex;
   font-weight: bold;
-  color:#696969;
+  color: #696969;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
@@ -603,21 +685,21 @@
 }
 
 hr.cardiv {
-    height:2px;
-    border-width:0;
-    color:#696969;
-    background-color:#696969;
-    margin-top: calc(#{$spacing-unit});
-    margin-bottom: calc(#{$spacing-unit});
+  height: 2px;
+  border-width: 0;
+  color: #696969;
+  background-color: #696969;
+  margin-top: calc(#{$spacing-unit});
+  margin-bottom: calc(#{$spacing-unit});
 }
 
 hr.pagediv {
   margin-top: calc(#{$spacing-unit} * 2);
   margin-bottom: calc(#{$spacing-unit} * 2);
-  height:2px;
-  border-width:0;
-  color:#696969;
-  background-color:#696969;
+  height: 2px;
+  border-width: 0;
+  color: #696969;
+  background-color: #696969;
 }
 
 .pilldiv {

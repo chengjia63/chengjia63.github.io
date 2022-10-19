@@ -5,9 +5,22 @@ html {
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
   margin: 0;
   padding: 0;
 
@@ -24,9 +37,9 @@ body {
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
@@ -39,9 +52,19 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
@@ -55,7 +78,8 @@ hr {
  * `main` element
  */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: block;
+  /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 
@@ -76,7 +100,7 @@ img.visabs {
 /**
  * Figures
  */
-figure > img {
+figure>img {
   display: block;
 }
 
@@ -89,13 +113,15 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
 li {
-  > ul,
-  > ol {
+
+  >ul,
+  >ol {
     margin-bottom: 0;
   }
 }
@@ -105,7 +131,12 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight;
 }
 
@@ -136,7 +167,18 @@ a {
   }
 }
 
-a.publication, a.award, a.classname {
+a.venue {
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a.publication,
+a.award,
+a.classname {
   color: #000000;
   text-decoration: none;
   font-weight: 600;
@@ -158,30 +200,34 @@ a.publication, a.award, a.classname {
     }
   }
 }
-a.publication{
+
+a.publication {
   @include relative-font-size(1.25);
   font-weight: 600;
 }
-a.award, a.classname{
+
+a.award,
+a.classname {
   @include relative-font-size(1.5);
   font-weight: bold;
 }
 
-a.pill, a.morepill {
+a.pill,
+a.morepill {
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 100px;
 }
 
-a.pill{
+a.pill {
   margin: $spacing-unit / 2;
   background-color: #000000;
   color: white;
   padding-top: $spacing-unit / 4;
   padding-bottom: $spacing-unit / 4;
   padding-left: $spacing-unit;
-  padding-right:$spacing-unit;
+  padding-right: $spacing-unit;
   font-size: medium;
 
   &:visited {
@@ -203,7 +249,7 @@ a.morepill {
   padding-top: $spacing-unit * 1;
   padding-bottom: $spacing-unit * 1;
   padding-left: $spacing-unit * 2;
-  padding-right:$spacing-unit * 2;
+  padding-right: $spacing-unit * 2;
 
   &:visited {
     color: #ffffff;
@@ -230,7 +276,8 @@ blockquote {
     margin-bottom: 0;
   }
 
-  i, em {
+  i,
+  em {
     font-style: normal;
   }
 }
@@ -257,7 +304,7 @@ pre {
   padding: 8px 12px;
   overflow-x: auto;
 
-  > code {
+  >code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
@@ -339,18 +386,23 @@ table {
   color: $table-text-color;
   border-collapse: collapse;
   border: 1px solid $table-border-color;
+
   tr {
     &:nth-child(even) {
       background-color: $table-zebra-color;
     }
   }
-  th, td {
+
+  th,
+  td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
+
   th {
     background-color: $table-header-bg-color;
     border: 1px solid $table-header-border;
   }
+
   td {
     border: 1px solid $table-border-color;
   }
@@ -359,6 +411,6 @@ table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-            -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }

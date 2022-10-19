@@ -15,6 +15,8 @@ jiang2022opensrh:
       link: https://arxiv.org/abs/2206.08439/
     - title: Github
       link: https://github.com/MLNeurosurg/opensrh
+    - title: OpenReview
+      link: https://openreview.net/forum?id=2N8JzuiWZ25
   recent: True
 jiang2021rapid:
   color: 941100

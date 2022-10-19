@@ -52,15 +52,19 @@ layout: default
     <div class="pilldiv">
         <a class="morepill" href="/publications">More Publications</a>
     </div>
-    
+
     <h3 style="font-weight:bold;">Preprints</h3>
     {% for i in site.data.preprints %}
     {% if i[1].recent %}
     <div class="pubcard">
-        <div class="pubpre">
+        <div class="publeft">
+            <img src="/assets/images/{{ i[0] }}.png" class="pc-profile">
+        </div>
+        <div class="pubright">
+            <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
+                {{ i[1].venue }}</p>
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
-            <p style="color:#696969;">{{ i[1].authors }} ({{ i[1].venue }})</p>
-
+            <p style="color:#696969;">{{ i[1].authors }} </p>
             {% for j in i[1].pills %}
             <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
             {% endfor %}
@@ -78,9 +82,11 @@ layout: default
                     AI4ALL
                 </a></div>
             <hr class="cardiv">
-            <div class="ttime"><p style="margin:0px;">
-                Summer 2022 | Summer 2021
-            </p></div>
+            <div class="ttime">
+                <p style="margin:0px;">
+                    Summer 2022 | Summer 2021
+                </p>
+            </div>
         </div>
         <div class="classcard">
             <div class="tinstu">ENGR 101 @ University of Michigan</div>
@@ -89,13 +95,15 @@ layout: default
                     Introduction to Computers & Programming
                 </a></div>
             <hr class="cardiv">
-            <div class="ttime"><p style="margin:0px;">
-                <a href="https://engr101staff.github.io/engr101.org/archive/w21_site.html">
-                    Winter 2021</a> |
-                <a href="https://engr101staff.github.io/engr101.org/archive/f20_site.html">
-                    Fall 2020</a><br>
-                Winter 2020 |
-                Fall 2019</p>
+            <div class="ttime">
+                <p style="margin:0px;">
+                    <a href="https://engr101staff.github.io/engr101.org/archive/w21_site.html">
+                        Winter 2021</a> |
+                    <a href="https://engr101staff.github.io/engr101.org/archive/f20_site.html">
+                        Fall 2020</a><br>
+                    Winter 2020 |
+                    Fall 2019
+                </p>
             </div>
         </div>
     </div>
