@@ -1,12 +1,12 @@
 hollon2022ai:
-    color: 531B93
+    color: 000000
     venue: 2022
     link: https://deepglioma.mlins.org/
     title: "AI-based molecular classification of diffuse gliomas using rapid,
         label-free optical imaging"
-    authors: "Todd Hollon, <b>Cheng Jiang,</b> Asadur Chowdury,
-        Mustafa Nasir-Moin, Akhil Kondepudi, Alexander Aabedi, Arjun Adapa,
-        Wajd Al-Holou, Jason Heth, Oren Sagher, Pedro Lowenstein, Maria Castro,
+    authors: "Todd Hollon, <b>Cheng Jiang,</b> Asadur Chowdury, Mustafa Nasir-Moin,
+        Akhil Kondepudi, Alexander Aabedi, Arjun Adapa, Wajd Al-Holou,
+        Jason Heth, Oren Sagher, Pedro Lowenstein, Maria Castro,
         Lisa Irina Wadiura, Georg Widhalm, Volker Neuschmelting,
         David Reinecke, Niklas von Spreckelsen, Mitchel Berger,
         Shawn Hervey-Jumper, John Golfinos, Matija Snuderl,

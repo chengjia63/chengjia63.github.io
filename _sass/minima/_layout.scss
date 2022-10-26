@@ -678,10 +678,8 @@
   display: flex;
   font-weight: bold;
   color: #696969;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: calc(#{$spacing-unit});
+  margin: 0px;
+  min-height: 50px;
 }
 
 hr.cardiv {
