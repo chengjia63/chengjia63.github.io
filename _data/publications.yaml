@@ -1,6 +1,7 @@
 jiang2022opensrh:
   color: 531B93
   venue: NEURIPS DATASETS & BENCHMARKS | 2022
+  venue_link: https://neurips.cc/Conferences/2022
   link: https://opensrh.mlins.org/
   title: "OpenSRH: optimizing brain tumor surgery using intraoperative
       stimulated Raman histology"
@@ -23,6 +24,7 @@ jiang2022opensrh:
 jiang2021rapid:
   color: 941100
   venue: NEUROSURGERY | 2022
+  venue_link: http://neurosurgery-online.com
   link: /publications/jiang2021rapid
   title: "Rapid automated analysis of skull base tumor specimens using
     intraoperative optical imaging and artificial intelligence"
@@ -83,7 +85,8 @@ farzaneh2020automated:
   recent: False
 jiang2019midline:
   color: FF9300
-  venue: "IEEE BIBM | 2019"
+  venue: BIBM | 2019
+  venue_link: https://ieeebibm.org/BIBM2019/
   link: "/publications/jiang2019midline"
   title: "Midline Shift vs. Mid-Surface Shift: Correlation with Outcome of
     Traumatic Brain Injuries"
@@ -100,7 +103,8 @@ jiang2019midline:
   recent: True
 farzaneh2016automated:
   color: 008F00
-  venue: IEEE EMBC | 2017
+  venue: EMBC | 2017
+  venue_link: https://embc.embs.org/2017/
   link: https://ieeexplore.ieee.org/document/8037505
   title: "Automated Subdural Hematoma Segmentation for Traumatic Brain Injured
     (TBI) Patients"

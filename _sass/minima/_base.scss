@@ -170,7 +170,9 @@ a {
 a.venue {
   text-decoration: none;
   font-weight: 600;
-
+  &:visited{
+    color: inherit;
+  } 
   &:hover {
     text-decoration: underline;
   }

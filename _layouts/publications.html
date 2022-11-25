@@ -9,8 +9,15 @@ layout: default
             <img src="/assets/images/{{ i[0] }}.png" class="pc-profile">
         </div>
         <div class="pubright">
+            {% if i[1].venue_link %}
+            <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
+                <a class="venue" href="{{ i[1].venue_link }}" style="color:#{{ i[1].color }};">
+                {{ i[1].venue }}</a></p>
+            {% else %}
             <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
                 {{ i[1].venue }}</p>
+            {% endif %}
+
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
             <p style="color:#696969;">{{ i[1].authors }} </p>
             {% for j in i[1].pills %}
