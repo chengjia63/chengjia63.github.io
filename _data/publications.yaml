@@ -17,6 +17,8 @@ jiang2022opensrh:
       link: https://github.com/MLNeurosurg/opensrh
     - title: OpenReview
       link: https://openreview.net/forum?id=2N8JzuiWZ25
+    - title: Talk
+      link: https://youtu.be/H36ERdgU-nI
   recent: True
 jiang2021rapid:
   color: 941100
@@ -37,6 +39,8 @@ jiang2021rapid:
       link: https://arxiv.org/abs/2108.03555
     - title: PubMed
       link: https://pubmed.ncbi.nlm.nih.gov/35343469/
+    - title: Talk
+      link: https://youtu.be/Y_VW_RL6ujk?t=2678
   recent: True
 bagherian2020coupled:
   color: 0096FF
