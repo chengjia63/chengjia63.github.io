@@ -4,13 +4,8 @@ hollon2022ai:
     link: https://deepglioma.mlins.org/
     title: "AI-based molecular classification of diffuse gliomas using rapid,
         label-free optical imaging"
-    authors: "Todd Hollon, <b>Cheng Jiang,</b> Asadur Chowdury, Mustafa Nasir-Moin,
-        Akhil Kondepudi, Alexander Aabedi, Arjun Adapa, Wajd Al-Holou,
-        Jason Heth, Oren Sagher, Pedro Lowenstein, Maria Castro,
-        Lisa Irina Wadiura, Georg Widhalm, Volker Neuschmelting,
-        David Reinecke, Niklas von Spreckelsen, Mitchel Berger,
-        Shawn Hervey-Jumper, John Golfinos, Matija Snuderl,
-        Sandra Camelo-Piragua, Christian Freudiger, Honglak Lee, and
+    authors: "Todd Hollon, <b>Cheng Jiang,</b> Asadur Chowdury, <span
+        class='dots'>...</span>, Christian Freudiger, Honglak Lee, and
         Daniel Orringer"
     pills:
         - title: Interactive Demo
