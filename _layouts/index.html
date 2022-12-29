@@ -2,11 +2,9 @@
 layout: default
 ---
 <div class="post-content">
-
     <div class="tc-div">
         <div class="tc-col-2">
-            <p>
-                I am a PhD student in the <a
+            <p> I am a PhD student in the <a
                     href="https://medicine.umich.edu/dept/computational-medicine-bioinformatics">
                     Department of Computational Medicine and Bioinformatics (DCMB) </a>
                 at the University of Michigan (U-M). I am a member of the <a
@@ -22,6 +20,10 @@ layout: default
                 the <a href="https://www.michiganmarchingband.com">Michigan
                     Marching Band</a>.
             </p>
+            <div style="display: flex; flex-direction: row; justify-content:center; flex-wrap: wrap;">
+                <a class="pill" href="https://scholar.google.com/citations?user=T9GuTDIAAAAJ&hl=en">Google Scholar</a>
+                <a class="pill" href="https://www.linkedin.com/in/chengjia63/">LinkedIn</a>
+            </div>
         </div>
         <div class="tc-col-1">
             <img src="/assets/images/chengjia.jpg" class="tc-profile">
@@ -48,10 +50,11 @@ layout: default
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
             <p style="color:#696969;">{{ i[1].authors }} </p>
 
+            <div>
             {% for j in i[1].pills %}
             <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
             {% endfor %}
-
+            </div>
         </div>
     </div>
     {% endif %}
@@ -72,9 +75,11 @@ layout: default
                 {{ i[1].venue }}</p>
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
             <p style="color:#696969;">{{ i[1].authors }} </p>
+            <div>
             {% for j in i[1].pills %}
             <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
             {% endfor %}
+            </div>
         </div>
     </div>
     {% endif %}

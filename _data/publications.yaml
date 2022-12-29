@@ -16,10 +16,12 @@ jiang2022opensrh:
       link: https://arxiv.org/abs/2206.08439/
     - title: Github
       link: https://github.com/MLNeurosurg/opensrh
-    - title: OpenReview
-      link: https://openreview.net/forum?id=2N8JzuiWZ25
     - title: Talk
       link: https://youtu.be/H36ERdgU-nI
+    - title: Poster
+      link: /assets/posters/jiang2022opensrh.pdf
+    - title: OpenReview
+      link: https://openreview.net/forum?id=2N8JzuiWZ25
   recent: True
 jiang2021rapid:
   color: 941100
@@ -28,16 +30,12 @@ jiang2021rapid:
   link: /publications/jiang2021rapid
   title: "Rapid automated analysis of skull base tumor specimens using
     intraoperative optical imaging and artificial intelligence"
-  authors: "<b>Cheng Jiang,</b> Abhishek Bhattacharya, Joseph Linzey, Rushikesh
-      Joshi, Sung Jik Cha, Sudharsan Srinivasan, Daniel Alber, Akhil Kondepudi,
-      Esteban Urias, Balaji Pandian, Wajd Al-Holou, Steve Sullivan, B. Gregory
-      Thompson, Jason Heth, Chris Freudiger, Siri Khalsa, Donato Pacione, John
-      G. Golfinos, Sandra Camelo-Piragua, Daniel A. Orringer, Honglak Lee, and
+  authors: "<b>Cheng Jiang,</b> <span class='dots'>...</span>, Daniel A. Orringer, Honglak Lee, and
       Todd Hollon"
   pills:
     - title: Paper
       link: https://doi.org/10.1227/neu.0000000000001929
-    - title: Arxiv
+    - title: arXiv
       link: https://arxiv.org/abs/2108.03555
     - title: PubMed
       link: https://pubmed.ncbi.nlm.nih.gov/35343469/

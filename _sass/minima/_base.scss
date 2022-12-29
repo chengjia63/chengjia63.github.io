@@ -263,25 +263,13 @@ a.morepill {
     background-color: #333333;
   }
 }
-a.dots {
-    display: inline;
+span.dots {
     padding: 0 10px 0 10px;
     border-radius:100px;
-    width:40px;
-    height:16px;
-    background-color:#bbbbbc;
+    //width: 40px;
+    //height: 16px;
+    background-color:#eeeeef;
     color: #696969;
-    
-    &:visited {
-    text-decoration: none;
-    color: #696969;
-    }
-
-    &:hover {
-    text-decoration: none;
-    color: #696969;
-    background-color:#cccccd;
-    }
 }
 
 /**

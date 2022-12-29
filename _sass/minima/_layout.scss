@@ -452,19 +452,22 @@
 
 .pubcard .publeft {
   width: 30%;
-  background-color: #eeeef0;
   border-radius: 10px 0 0 10px;
   padding: $spacing-unit;
-  //justify-items: center;
+  justify-items: center;
+  justify-content: center;
   align-items: center;
   display: flex;
 }
 
 .pubcard .pubright {
+  display: flex;
+  flex-direction: column;
   width: 70%;
   text-align: left;
-  background-color: #eeeef0;
   border-radius: 0 10px 10px 0;
+  align-items: start;
+  justify-content: center;
 }
 
 .pubcard .pubpre {
@@ -475,15 +478,17 @@
 .pc-profile {
   width: 100%;
   //border-radius: 10px 0 0 10px;
-  //border-radius: 10px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: $on-palm) {
   .pubcard {
     display: flex;
     flex-direction: column;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding: 0px;
+    margin: calc(#{$spacing-unit} * 2) $spacing-unit;
+    box-shadow: 0 0 $spacing-unit rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
   }
 
   .pubcard .publeft,
@@ -492,14 +497,12 @@
     width: 100%;
     margin-right: 0%;
     margin-left: 0%;
-    background-color: #eeeef0;
   }
 
   .pubcard .publeft {
     text-align: center;
-    margin-top: $spacing-unit;
-    margin-bottom: 0%;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0px;
@@ -508,13 +511,13 @@
 
   .pubcard .pubright {
     text-align: left;
-    margin-top: 0%;
-    margin-bottom: $spacing-unit;
+    margin: 0%;
     padding: $spacing-unit;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    background-color: #ffffff;
     /*
     border-top: 0px;
     border-bottom: 2px solid;
@@ -576,7 +579,6 @@
 }
 
 @media only screen and (max-width: $on-palm) {
-
   .awards,
   .industry,
   .teaching {

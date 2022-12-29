@@ -20,9 +20,11 @@ layout: default
 
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
             <p style="color:#696969;">{{ i[1].authors }} </p>
+            <div>
             {% for j in i[1].pills %}
             <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
             {% endfor %}
+            </div>
         </div>
     </div>
     {% endfor %}
@@ -38,9 +40,11 @@ layout: default
                 {{ i[1].venue }}</p>
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
             <p style="color:#696969;">{{ i[1].authors }} </p>
+            <div>
             {% for j in i[1].pills %}
             <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
             {% endfor %}
+            </div>
         </div>
     </div>
     {% endfor %}
