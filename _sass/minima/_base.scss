@@ -213,6 +213,14 @@ a.classname {
   @include relative-font-size(1.5);
   font-weight: bold;
 }
+ 
+@media screen and (max-width: $on-laptop) {
+a.classname {
+  @include relative-font-size(1.3);
+  font-weight: bold;
+}
+
+}
 
 a.pill,
 a.morepill {

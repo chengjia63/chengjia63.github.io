@@ -1,3 +1,38 @@
+jiang2022hierarchical:
+    color: 005493
+    venue: CVPR | 2023
+    venue_link: https://cvpr2023.thecvf.com
+    link: https://hidisc.mlins.org/
+    title: Hierarchical sampling improves visual representation learning of
+        biomedical microscopy
+    authors: <b>Cheng Jiang<sup>*</sup>, </b> Xinhai Hou<sup>*</sup>, Akhil
+        Kondepudi, Asadur Chowdury, Christian W. Freudiger, Honglak Lee, and
+        Todd C. Hollon
+    pills:
+        - title: Website
+          link: https://hidisc.mlins.org/
+        - title: arXiv
+          link: https://arxiv.org/abs/2303.01605
+        - title: Github
+          link: https://github.com/MLNeurosurg/hidisc
+    recent: True
+hollon2022ai:
+    color: 941100
+    venue: NATURE MEDICINE | 2023
+    link: https://deepglioma.mlins.org/
+    title: "AI-based molecular classification of diffuse gliomas using rapid,
+        label-free optical imaging"
+    authors: "Todd Hollon, <b>Cheng Jiang,</b> Asadur Chowdury, <span
+        class='dots'>...</span>, Christian Freudiger, Honglak Lee, and
+        Daniel Orringer"
+    pills:
+        - title: Interactive Demo
+          link: https://deepglioma.mlins.org/
+        - title: Preprint
+          link: https://doi.org/10.21203/rs.3.rs-1930236/v1
+        - title: Github
+          link: https://github.com/MLNeurosurg/deepglioma
+    recent: True
 jiang2022opensrh:
   color: 531B93
   venue: NEURIPS DATASETS & BENCHMARKS | 2022
@@ -30,8 +65,8 @@ jiang2021rapid:
   link: /publications/jiang2021rapid
   title: "Rapid automated analysis of skull base tumor specimens using
     intraoperative optical imaging and artificial intelligence"
-  authors: "<b>Cheng Jiang,</b> <span class='dots'>...</span>, Daniel A. Orringer, Honglak Lee, and
-      Todd Hollon"
+  authors: "<b>Cheng Jiang,</b> <span class='dots'>...</span>, Daniel A.
+    Orringer, Honglak Lee, and Todd Hollon"
   pills:
     - title: Paper
       link: https://doi.org/10.1227/neu.0000000000001929
@@ -98,7 +133,7 @@ jiang2019midline:
       link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7871460/
     - title: Poster
       link: /assets/posters/jiang2019midline.pdf
-  recent: True
+  recent: False
 farzaneh2016automated:
   color: 008F00
   venue: EMBC | 2017

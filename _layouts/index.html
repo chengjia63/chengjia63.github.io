@@ -63,7 +63,7 @@ layout: default
         <a class="morepill" href="/publications">More Publications</a>
     </div>
 
-    <h3 style="font-weight:bold;">Preprints</h3>
+    <!--h3 style="font-weight:bold;">Preprints</h3>
     {% for i in site.data.preprints %}
     {% if i[1].recent %}
     <div class="pubcard">
@@ -84,6 +84,18 @@ layout: default
     </div>
     {% endif %}
     {% endfor %}
+    -->
+    <h3 style="font-weight:bold;">Awards</h3>
+    <div class="awards">
+        {% for i in site.data.awards %}
+        <div class="awardcard">
+            <p class="awardname">
+                <a class="award" href="{{ i.link }}">{{ i.award }}</a>
+            </p>
+            <p class="awarder">{{ i.awarder }} | {{ i.time }}</p>
+        </div>
+        {% endfor %}
+    </div>
 
     <h3 style="font-weight:bold;">Teaching</h3>
     <div class="teaching">
@@ -122,18 +134,6 @@ layout: default
                 </p>
             </div>
         </div>
-    </div>
-
-    <h3 style="font-weight:bold;">Awards</h3>
-    <div class="awards">
-        {% for i in site.data.awards %}
-        <div class="awardcard">
-            <p class="awardname">
-                <a class="award" href="{{ i.link }}">{{ i.award }}</a>
-            </p>
-            <p class="awarder">{{ i.awarder }} | {{ i.time }}</p>
-        </div>
-        {% endfor %}
     </div>
 
     <h3 style="font-weight:bold;">Internships</h3>

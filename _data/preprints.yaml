@@ -1,17 +1,16 @@
-hollon2022ai:
+jiang2022hierarchical:
     color: 000000
     venue: 2022
-    link: https://deepglioma.mlins.org/
-    title: "AI-based molecular classification of diffuse gliomas using rapid,
-        label-free optical imaging"
-    authors: "Todd Hollon, <b>Cheng Jiang,</b> Asadur Chowdury, <span
-        class='dots'>...</span>, Christian Freudiger, Honglak Lee, and
-        Daniel Orringer"
+    link: https://hisp.mlins.org/
+    title: Hierarchical sampling improves visual representation learning of
+        biomedical microscopy
+    authors: <b>Cheng Jiang, </b> Xinhai Hou, Akhil Kondepudi, Asadur Chowdury,
+        Christian W. Freudiger, Honglak Lee, and  Todd C. Hollon
     pills:
-        - title: Interactive Demo
-          link: https://deepglioma.mlins.org/
-        - title: Preprint
-          link: https://doi.org/10.21203/rs.3.rs-1930236/v1
+        - title: Website
+          link: https://hisp.mlins.org/
+        - title: arXiv
+          link: https://arxiv.org/abs/2206.08439/
         - title: Github
-          link: https://github.com/MLNeurosurg/deepglioma
+          link: https://github.com/MLNeurosurg/opensrh
     recent: True
