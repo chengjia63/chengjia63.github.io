@@ -16,18 +16,22 @@ jiang2022hierarchical:
         - title: Github
           link: https://github.com/MLNeurosurg/hidisc
     recent: True
+    honors: HIGHLIGHT
 hollon2022ai:
     color: 941100
     venue: NATURE MEDICINE | 2023
     link: https://deepglioma.mlins.org/
-    title: "AI-based molecular classification of diffuse gliomas using rapid,
-        label-free optical imaging"
+    venue_link: https://www.nature.com/nm/
+    title: "Artificial-intelligence-based molecular classification of diffuse
+        gliomas using rapid, label-free optical imaging"
     authors: "Todd Hollon, <b>Cheng Jiang,</b> Asadur Chowdury, <span
         class='dots'>...</span>, Christian Freudiger, Honglak Lee, and
         Daniel Orringer"
     pills:
         - title: Interactive Demo
           link: https://deepglioma.mlins.org/
+        - title: Paper
+          link: https://doi.org/10.1038/s41591-023-02252-4
         - title: Preprint
           link: https://doi.org/10.21203/rs.3.rs-1930236/v1
         - title: Github
@@ -77,6 +81,7 @@ jiang2021rapid:
     - title: Talk
       link: https://youtu.be/Y_VW_RL6ujk?t=2678
   recent: True
+  honors: COVER
 bagherian2020coupled:
   color: 0096FF
   venue: BRIEFINGS IN BIOINFORMATICS | 2021
@@ -103,7 +108,7 @@ li2020prediction:
       link: https://doi.org/10.1016/j.bspc.2020.102200
 farzaneh2020automated:
   color: 009193
-  venue: MDPI DIAGNOSTICS | 2020
+  venue: DIAGNOSTICS | 2020
   link: https://doi.org/10.3390/diagnostics10100773
   title: "Segmentation and Severity Analysis of Subdural Hematoma for Patients
     with Traumatic Brain Injuries"

@@ -12,12 +12,21 @@ layout: default
             {% if i[1].venue_link %}
             <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
                 <a class="venue" href="{{ i[1].venue_link }}" style="color:#{{ i[1].color }};">
-                {{ i[1].venue }}</a></p>
+                {{ i[1].venue }}</a>
             {% else %}
             <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
-                {{ i[1].venue }}</p>
+                {{ i[1].venue }}
             {% endif %}
 
+            {% if i[1].honors %}
+            <span style="background-color:red;color:white;border-radius:4px;margin-left:10px;padding:0px 3px 0px 3px;">{{ i[1].honors }}</span>
+            {% endif %}
+
+            {% if i[1].recent %}
+            <span style="background-color:#FEAE00;color:white;border-radius:4px;margin-left:10px;padding:0px 3px 0px 3px;">NEW</span>
+            {% endif %}
+
+            </p>
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
             <p style="color:#696969;">{{ i[1].authors }} </p>
             <div>
