@@ -39,16 +39,16 @@ layout: default
         </div>
         <div class="pubright">
             {% if i[1].venue_link %}
-            <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
+            <p style="color:#{{ i[1].color }}; margin: 0px;">
                 <a class="venue" href="{{ i[1].venue_link }}" style="color:#{{ i[1].color }};">
                 {{ i[1].venue }}</a>
             {% else %}
-            <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
+            <p style="color:#{{ i[1].color }}; margin: 0px;">
                 {{ i[1].venue }}
             {% endif %}
 
             {% if i[1].honors %}
-            <span style="background-color:red;color:white;border-radius:4px;margin-left:10px;padding:0px 3px 0px 3px;">{{ i[1].honors }}</span>
+            <span style="font-weight:bold;background-color:red;color:white;border-radius:4px;margin-left:10px;padding:0px 3px 0px 3px;">{{ i[1].honors }}</span>
             {% endif %}
 
             </p>

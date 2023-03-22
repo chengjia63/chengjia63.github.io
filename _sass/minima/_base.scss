@@ -169,7 +169,7 @@ a {
 
 a.venue {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
   &:visited{
     color: inherit;
   } 
@@ -183,7 +183,7 @@ a.award,
 a.classname {
   color: #000000;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 
   &:visited {
     color: #000000;
@@ -203,12 +203,12 @@ a.classname {
   }
 }
 
+a.award,
 a.publication {
-  @include relative-font-size(1.25);
-  font-weight: 600;
+  @include relative-font-size(1.5);
+  font-weight: 500;
 }
 
-a.award,
 a.classname {
   @include relative-font-size(1.5);
   font-weight: bold;

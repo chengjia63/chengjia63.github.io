@@ -632,6 +632,7 @@
   justify-content: center;
   align-items: center;
   margin: 0px;
+  font-weight:bold;
 }
 
 .ttime {
@@ -648,7 +649,6 @@
 
 .awardname {
   @include relative-font-size(1.50);
-  font-weight: bold;
   color: #000000;
 }
 
@@ -659,7 +659,6 @@
 
 .indemp {
   @include relative-font-size(1.75);
-  font-weight: bold;
   color: #000000;
   margin-top: calc(#{$spacing-unit});
   margin-bottom: calc(#{$spacing-unit});
@@ -669,7 +668,6 @@
 
 .indtitle {
   color: #696969;
-  font-weight: bold;
   margin: 0px;
 }
 
