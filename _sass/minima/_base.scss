@@ -237,22 +237,22 @@ a.morepill {
 
 a.pill {
   margin: $spacing-unit / 2;
-  background-color: #000000;
+  background-color: black;
   color: white;
-  padding-top: $spacing-unit / 4;
-  padding-bottom: $spacing-unit / 4;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
   font-size: medium;
 
   &:visited {
     color: #ffffff;
-    background-color: #000000;
+    background-color: black;
   }
 
   &:hover {
     color: #ffffff;
-    background-color: #333333;
+    background-color: #343a40;
   }
 }
 
@@ -273,15 +273,15 @@ a.morepill {
 
   &:hover {
     color: #ffffff;
-    background-color: #333333;
+    background-color: #343a40;
   }
 }
 span.dots {
     padding: 0 10px 0 10px;
-    border-radius:100px;
+    border-radius: 100px;
     //width: 40px;
     //height: 16px;
-    background-color:#eeeeef;
+    background-color:#f1f3f5;
     color: #696969;
 }
 

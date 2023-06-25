@@ -1,10 +1,10 @@
 jiang2022hierarchical:
-    color: 005493
+    color: 1864ab
     venue: CVPR | 2023
     venue_link: https://cvpr2023.thecvf.com
     link: https://hidisc.mlins.org/
-    title: Hierarchical sampling improves visual representation learning of
-        biomedical microscopy
+    title: Hierarchical Discriminative Learning Improves Visual Representations
+        of Biomedical Microscopy
     authors: <b>Cheng Jiang<sup>*</sup>, </b> Xinhai Hou<sup>*</sup>, Akhil
         Kondepudi, Asadur Chowdury, Christian W. Freudiger, Honglak Lee, and
         Todd C. Hollon
@@ -15,10 +15,14 @@ jiang2022hierarchical:
           link: https://arxiv.org/abs/2303.01605
         - title: Github
           link: https://github.com/MLNeurosurg/hidisc
+        - title: Video
+          link: https://www.youtube.com/watch?v=PkXki83vQqg
+        - title: Poster
+          link: https://hidisc.mlins.org/assets/images/hidisc_poster.png
     recent: True
     honors: HIGHLIGHT
 hollon2022ai:
-    color: 941100
+    color: c92a2a
     venue: NATURE MEDICINE | 2023
     link: https://deepglioma.mlins.org/
     venue_link: https://www.nature.com/nm/
@@ -38,7 +42,7 @@ hollon2022ai:
           link: https://github.com/MLNeurosurg/deepglioma
     recent: True
 jiang2022opensrh:
-  color: 531B93
+  color: 5f3dc4
   venue: NEURIPS DATASETS & BENCHMARKS | 2022
   venue_link: https://neurips.cc/Conferences/2022
   link: https://opensrh.mlins.org/
@@ -63,7 +67,7 @@ jiang2022opensrh:
       link: https://openreview.net/forum?id=2N8JzuiWZ25
   recent: True
 jiang2021rapid:
-  color: 941100
+  color: c92a2a
   venue: NEUROSURGERY | 2022
   venue_link: http://neurosurgery-online.com
   link: /publications/jiang2021rapid
@@ -96,7 +100,7 @@ bagherian2020coupled:
     - title: PubMed
       link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7986629/
 li2020prediction:
-  color: 941100
+  color: c92a2a
   venue: BIOMEDICAL SIGNAL PROCESSING & CONTROL | 2021
   link: https://doi.org/10.1016/j.bspc.2020.102200
   title: "Prediction of Cardiac Arrhythmia Using Deterministic Probabilistic
@@ -107,7 +111,7 @@ li2020prediction:
     - title: Paper
       link: https://doi.org/10.1016/j.bspc.2020.102200
 farzaneh2020automated:
-  color: 009193
+  color: 0b7285
   venue: DIAGNOSTICS | 2020
   link: https://doi.org/10.3390/diagnostics10100773
   title: "Segmentation and Severity Analysis of Subdural Hematoma for Patients
@@ -122,7 +126,7 @@ farzaneh2020automated:
       link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7600198/
   recent: False
 jiang2019midline:
-  color: FF9300
+  color: e67700
   venue: BIBM | 2019
   venue_link: https://ieeebibm.org/BIBM2019/
   link: "/publications/jiang2019midline"
@@ -140,7 +144,7 @@ jiang2019midline:
       link: /assets/posters/jiang2019midline.pdf
   recent: False
 farzaneh2016automated:
-  color: 008F00
+  color: 5c940d
   venue: EMBC | 2017
   venue_link: https://embc.embs.org/2017/
   link: https://ieeexplore.ieee.org/document/8037505
