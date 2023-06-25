@@ -6,8 +6,8 @@ jiang2022hierarchical:
     title: Hierarchical Discriminative Learning Improves Visual Representations
         of Biomedical Microscopy
     authors: <b>Cheng Jiang<sup>*</sup>, </b> Xinhai Hou<sup>*</sup>, Akhil
-        Kondepudi, Asadur Chowdury, Christian W. Freudiger, Honglak Lee, and
-        Todd C. Hollon
+        Kondepudi, Asadur Chowdury, Christian W. Freudiger, Daniel A. Orringer,
+        Honglak Lee, and Todd C. Hollon
     pills:
         - title: Website
           link: https://hidisc.mlins.org/
