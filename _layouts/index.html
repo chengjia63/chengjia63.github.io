@@ -104,54 +104,44 @@ layout: default
     </div>
 
     <h3 style="font-weight:bold;">Teaching</h3>
-    <div class="teaching">
-        <div class="classcard">
-            <div class="tinstu"><p style="margin:0"><a
-            href="https://culture.engin.umich.edu/k-12/ai4all/">Summer
-            Program</a>&nbsp;@ University of Michigan</p></div>
-            <div class="tclassname"><a class="classname" style="color:#FF9300"
+    <div class="awards">
+        <div class="awardcard">
+            <p class="awarder">
+            <a href="https://culture.engin.umich.edu/k-12/ai4all/">Summer
+            Program</a>&nbsp;@ University of Michigan
+            </p>
+
+            <p class="awardname">
+                <a class="classname" style="color:#FF9300"
                     href="https://ai-4-all.org">
                     AI4ALL
-                </a></div>
-            <hr class="cardiv">
-            <div class="ttime">
-                <p style="margin:0px;">
-                    Summer 2022 | Summer 2021
-                </p>
-            </div>
+                </a>
+            </p>
+
+            <p class="awarder">Summer 2022 | Summer 2021 </p>
         </div>
-        <div class="classcard">
-            <div class="tinstu"><p style="margin:0"><a
-            href="https://adue.engin.umich.edu/engineering-101-introduction-to-computers-and-programming/">ENGR
-            101</a>&nbsp;@ University of Michigan</p></div>
-            <div class="tclassname"><a class="classname" style="color:#531B93"
+
+        <div class="awardcard">
+            <p class="awarder">
+            <a href="https://adue.engin.umich.edu/engineering-101-introduction-to-computers-and-programming/">ENGR
+            101</a>&nbsp;@ University of Michigan
+            </p>
+
+            <p class="awardname">
+                <a class="classname" style="color:#531B93"
                     href="https://engr101.org/">
                     Introduction to Computers & Programming
-                </a></div>
-            <hr class="cardiv">
-            <div class="ttime">
-                <p style="margin:0px;">
-                    <a href="https://engr101staff.github.io/engr101.org/archive/w21_site.html">
-                        Winter 2021</a> |
-                    <a href="https://engr101staff.github.io/engr101.org/archive/f20_site.html">
-                        Fall 2020</a><br>
-                    Winter 2020 |
-                    Fall 2019
-                </p>
-            </div>
+                </a>
+            </p>
+
+            <p class="awarder">
+                <a href="https://engr101staff.github.io/engr101.org/archive/w21_site.html">
+                Winter 2021</a> |
+                <a href="https://engr101staff.github.io/engr101.org/archive/f20_site.html">
+                Fall 2020</a> | 
+                Winter 2020 | Fall 2019
+            </p>
         </div>
     </div>
 
-    <h3 style="font-weight:bold;">Internships</h3>
-    <div class="industry">
-        {% for i in site.data.internships %}
-        <div class="indcard">
-            <p class="indtitle">{{ i.time }}</p>
-            <p class="indemp" style="color:#{{ i.color }};">
-                {{ i.employer }}
-            </p>
-            <p class="indtitle">{{ i.title }}</p>
-        </div>
-        {% endfor %}
-    </div>
 </div>
