@@ -29,9 +29,3 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.7"
-
-# vulnerability found 
-#gem "kramdown", ">= 2.3.1"
-#gem "addressable", ">= 2.8.0"
-#gem "nokogiri", ">= 1.11.4"
-#gem "cmark-gfm", "~> 0.23.4"
