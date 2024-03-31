@@ -183,7 +183,7 @@ a.award,
 a.classname {
   color: #000000;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
 
   &:visited {
     color: #000000;
@@ -205,12 +205,12 @@ a.classname {
 
 a.award,
 a.publication {
-  @include relative-font-size(1.5);
-  font-weight: 500;
+  @include relative-font-size(1.4);
+  font-weight: bold;
 }
 
 a.classname {
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.4);
   font-weight: bold;
 }
  
@@ -218,7 +218,7 @@ a.classname {
 a.award,
 a.publication {
   @include relative-font-size(1.3);
-  font-weight: 500;
+  font-weight: bold;
 }
 a.classname {
   @include relative-font-size(1.3);

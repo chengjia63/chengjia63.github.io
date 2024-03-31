@@ -19,9 +19,9 @@ layout: default
                 {{ i[1].venue }}
             {% endif %}
 
-                {% if i[1].honors %}
-                <span style="font-weight:bold;background-color:#c92a2a;color:white;border-radius:0px;margin-left:10px;padding:0px 3px 0px 3px;">{{ i[1].honors }}</span>
-                {% endif %}
+            {% if i[1].honors %}
+            <span style="font-weight:bold;background-color:#c92a2a;color:white;border-radius:0px;margin-left:10px;padding:0px 3px 0px 3px;">{{ i[1].honors }}</span>
+            {% endif %}
             </p>
 
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>

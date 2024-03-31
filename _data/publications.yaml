@@ -1,3 +1,25 @@
+kondepudi2024visual:
+    color: 111
+    venue: PREPRINT | 2024
+    venue_link: https://arxiv.org
+    link: https://fastglioma.mlins.org
+    title: Visual foundation models for fast, label-free detection of diffuse glioma infiltration
+    authors: Akhil Kondepudi, Melike Pekmezci, Xinhai Hou, Katie Scotford, <b>Cheng Jiang, </b> <span class='dots'>...</span>,Shawn Hervey-Jumper, and Todd Hollon
+    pills:
+    - title: Preprint
+      link: https://www.researchsquare.com/article/rs-4033133/v1
+    recent: False
+lyu2024step:
+    color: 111
+    venue: ARXIV | 2024
+    venue_link: https://arxiv.org
+    link: https://mlins.org/
+    title: Step-Calibrated Diffusion for Biomedical Optical Image Restoration
+    authors: Yiwei Lyu, Sung Jik Cha, <b>Cheng Jiang,</b>  <span class='dots'>...</span>, Christian Freudiger, Honglak Lee,  Todd Hollon
+    pills:
+    - title: arXiv
+      link: https://arxiv.org/abs/2403.13680v1
+    recent: False
 hou2024self:
     color: 111
     venue: ARXIV | 2024
@@ -11,8 +33,9 @@ hou2024self:
     recent: True
 harake2024development:
     color: 5c940d
-    venue: JOURNAL OF NEUROSURGERY SPINE | ACCEPTED
-    link: https://arxiv.org/abs/2402.06185
+    venue: JOURNAL OF NEUROSURGERY SPINE | 2024
+    venue_link: https://thejns.org/
+    link: https://mlins.org/spinepose
     title: Development and Validation of an Artificial Intelligence Model to Accurately Predict Spinopelvic Parameters
     authors: Edward S. Harake, Joseph R. Linzey, <b>Cheng Jiang,</b> <span class='dots'>...</span>, Todd Hollon, Paul Park
     pills:
@@ -20,6 +43,8 @@ harake2024development:
       link: https://mlins.org/spinepose
     - title: arXiv
       link: https://arxiv.org/abs/2402.06185
+    - title: Paper
+      link: https://doi.org/10.3171/2024.1.SPINE231252
     recent: False
 jiang2022hierarchical:
     color: 1864ab
