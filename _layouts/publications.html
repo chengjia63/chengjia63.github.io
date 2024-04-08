@@ -4,7 +4,7 @@ layout: default
 <div class="post-content">
     <h2><b>Publications</b></h2>
     {% for i in site.data.publications %}
-    <div class="pubcard">
+    <div class="pub-wrapper">
         <div class="publeft">
             <img src="/assets/images/{{ i[0] }}.png" class="pc-profile">
         </div>
@@ -34,25 +34,4 @@ layout: default
         </div>
     </div>
     {% endfor %}
-
-    <!--h2 style="font-weight:bold;">Preprints</h2>
-    {% for i in site.data.preprints %}
-    <div class="pubcard">
-        <div class="publeft">
-            <img src="/assets/images/{{ i[0] }}.png" class="pc-profile">
-        </div>
-        <div class="pubright">
-            <p style="color:#{{ i[1].color }}; margin: 0px; font-weight:bold">
-                {{ i[1].venue }}</p>
-            <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
-            <p style="color:#696969;">{{ i[1].authors }} </p>
-            <div>
-            {% for j in i[1].pills %}
-            <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
-            {% endfor %}
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-    -->
 </div>
