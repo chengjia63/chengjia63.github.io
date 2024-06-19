@@ -10,6 +10,10 @@ jiang2024super:
       link: https://mlins.org/msdsr
     - title: arXiv
       link: https://arxiv.org/abs/2404.09425
+    - title: Github
+      link: https://github.com/MLNeurosurg/msdsr/
+    - title: Poster
+      link: https://mlins-site.s3.amazonaws.com/pdf/posters/jiang2024super.png
     recent: False
 kondepudi2024visual:
     color: 111
