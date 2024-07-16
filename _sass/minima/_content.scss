@@ -107,7 +107,7 @@ img.bio-profile {
         display: flex;
         flex-direction: column;
         padding: 0px;
-        padding-bottom: 10px;
+        padding-bottom: $spacing-unit;
         margin: calc(#{$spacing-unit} * 2) $spacing-unit;
         //box-shadow: 0 0 $spacing-unit rgba(0, 0, 0, 0.2);
         //border-radius: 15px;
@@ -136,13 +136,6 @@ img.bio-profile {
         padding-top: $spacing-unit;
         padding-bottom: $spacing-unit;
         border-radius: 0px;
-        /*
-      border-top: 0px;
-      border-bottom: 2px solid;
-      border-left: 2px solid;
-      border-right: 2px solid;
-      border-color: #696969;
-      */
     }
 
     .pubcard .pubpre {
@@ -177,8 +170,8 @@ img.bio-profile {
     text-align: center;
     margin: calc(#{$spacing-unit} / 2);
     padding: $spacing-unit;
-    border-radius: 10px;
-    background-color: #f5f5f5;
+    border-radius: $spacing-unit;
+    background-color: $pill-color;
     justify-items: center;
 }
 
@@ -211,12 +204,12 @@ img.bio-profile {
     .industry .indcard,
     .teaching .classcard {
         text-align: center;
-        border-radius: 10px;
+        border-radius: $spacing-unit;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: calc(#{$spacing-unit} / 2);
         margin-bottom: calc(#{$spacing-unit} / 2);
-        background-color: #eeeef0;
+        background-color: $pill-color;
     }
 
     .awards .awardcard {
@@ -262,23 +255,19 @@ img.bio-profile {
     margin: 0px;
     min-height: 48px;
     font-weight: bold;
-    color: #696969;
+    color: $light-text-color;
     margin: 0px;
 }
 
-.awardname {
-    @include relative-font-size(1.50);
-    color: #000000;
-}
 
 .awarder {
-    color: #696969;
+    color: $light-text-color;
     font-weight: bold;
 }
 
 .indemp {
-    @include relative-font-size(1.75);
-    color: #000000;
+    @include relative-font-size(1.25);
+    color: $text-color;
     margin-top: calc(#{$spacing-unit});
     margin-bottom: calc(#{$spacing-unit});
     margin-left: auto;
@@ -286,22 +275,22 @@ img.bio-profile {
 }
 
 .indtitle {
-    color: #696969;
+    color: $light-text-color;
     margin: 0px;
 }
 
 .tclassname {
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
     min-height: 80px;
 }
 
 .tinstu {
     display: flex;
     font-weight: bold;
-    color: #696969;
+    color: $light-text-color;
     margin: 0px;
     min-height: 50px;
 }
@@ -309,8 +298,8 @@ img.bio-profile {
 hr.cardiv {
     height: 2px;
     border-width: 0;
-    color: #696969;
-    background-color: #696969;
+    color: $light-text-color;
+    background-color: $light-text-color;
     margin-top: calc(#{$spacing-unit});
     margin-bottom: calc(#{$spacing-unit});
 }
@@ -320,8 +309,8 @@ hr.pagediv {
     margin-bottom: calc(#{$spacing-unit} * 2);
     height: 2px;
     border-width: 0;
-    color: #696969;
-    background-color: #696969;
+    color: $light-text-color;
+    background-color: $light-text-color;
 }
 
 .pilldiv {
@@ -363,16 +352,16 @@ a.venue {
 a.publication,
 a.award,
 a.classname {
-    color: #000000;
+    color: $text-color;
     text-decoration: none;
     font-weight: bold;
 
     &:visited {
-        color: #000000;
+        color: $text-color;
     }
 
     &:hover {
-        color: #000000;
+        color: $text-color;
         text-decoration: underline;
     }
 
@@ -387,12 +376,12 @@ a.classname {
 
 a.award,
 a.publication {
-    @include relative-font-size(1.4);
+    @include relative-font-size(1.25);
     font-weight: bold;
 }
 
 a.classname {
-    @include relative-font-size(1.4);
+    @include relative-font-size(1.25);
     font-weight: bold;
 }
 
@@ -400,12 +389,12 @@ a.classname {
 
     a.award,
     a.publication {
-        @include relative-font-size(1.3);
+        @include relative-font-size(1.2);
         font-weight: bold;
     }
 
     a.classname {
-        @include relative-font-size(1.3);
+        @include relative-font-size(1.2);
         font-weight: bold;
     }
 
@@ -421,8 +410,8 @@ a.morepill {
 
 a.pill {
     margin: $spacing-unit / 2;
-    background-color: #eeeeee;
-    color: black;
+    background-color: $pill-color;
+    color: $text-color;
     padding-top: $spacing-unit / 4;
     padding-bottom: $spacing-unit / 4;
     padding-left: $spacing-unit;
@@ -431,13 +420,13 @@ a.pill {
     font-weight: 500;
 
     &:visited {
-        background-color: #eeeeee;
-        color: black;
+        background-color: $pill-color;
+        color: $text-color;
     }
 
     &:hover {
-        background-color: #dddddd;
-        color: black;
+        background-color: $interact-pill-color;
+        color: $text-color;
     }
 }
 
@@ -452,14 +441,27 @@ a.morepill {
     padding-right: $spacing-unit * 2;
 
     &:visited {
-        color: #ffffff;
+        color: $background-color;
         background-color: $link-base-color;
     }
 
     &:hover {
-        color: #ffffff;
-        background-color: #343a40;
+        color: $background-color;
+        background-color: $negative-pill-color;
     }
+}
+
+p.authors {
+  color: $light-text-color;
+}
+
+span.honors{
+  font-weight:bold;
+  background-color:#c92a2a;
+  color: $background-color;
+  border-radius:0px;
+  margin-left:$spacing-unit;
+  padding:0px 3px 0px 3px;
 }
 
 span.dots {
@@ -468,5 +470,5 @@ span.dots {
     //width: 40px;
     //height: 16px;
     //background-color:#f1f3f5;
-    color: #696969;
+    color: $light-text-color;
 }

@@ -19,7 +19,8 @@ url: "https://chengjia.me"
 
 # Build settings
 theme: minima
-
+minima:
+  skin: auto
 #plugins:
 #  - jekyll-feed
 

@@ -48,13 +48,13 @@ layout: default
             {% endif %}
 
             {% if i[1].honors %}
-            <span style="font-weight:bold;background-color:#c92a2a;color:white;border-radius:0px;margin-left:10px;padding:0px 3px 0px 3px;">{{ i[1].honors }}</span>
+            <span class="honors">{{ i[1].honors }}</span>
             {% endif %}
 
             </p>
 
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
-            <p style="color:#696969;">{{ i[1].authors }} </p>
+            <p class="authors">{{ i[1].authors }} </p>
 
             <div>
             {% for j in i[1].pills %}
@@ -95,9 +95,9 @@ layout: default
     <div class="awards">
         {% for i in site.data.awards %}
         <div class="awardcard">
-            <p class="awardname">
+            <div class="awardname">
                 <a class="award" href="{{ i.link }}">{{ i.award }}</a>
-            </p>
+            </div>
             <p class="awarder">{{ i.awarder }} | {{ i.time }}</p>
         </div>
         {% endfor %}
@@ -106,17 +106,17 @@ layout: default
     <h3 style="font-weight:bold;">Teaching</h3>
     <div class="awards">
         <div class="awardcard">
-            <p class="awarder">
+            <div class="awarder">
             <a href="https://culture.engin.umich.edu/k-12/ai4all/">Summer
             Program</a>&nbsp;@ University of Michigan
-            </p>
+            </div>
 
-            <p class="awardname">
+            <div class="awardname">
                 <a class="classname" style="color:#FF9300"
                     href="https://ai-4-all.org">
                     AI4ALL
                 </a>
-            </p>
+            </div>
 
             <p class="awarder">Summer 2022 | Summer 2021 </p>
         </div>
@@ -128,7 +128,7 @@ layout: default
             </p>
 
             <p class="awardname">
-                <a class="classname" style="color:#531B93"
+                <a class="classname" style="color:#7326CD"
                     href="https://engr101.org/">
                     Introduction to Computers & Programming
                 </a>

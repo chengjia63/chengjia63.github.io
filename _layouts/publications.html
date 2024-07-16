@@ -20,12 +20,12 @@ layout: default
             {% endif %}
 
             {% if i[1].honors %}
-            <span style="font-weight:bold;background-color:#c92a2a;color:white;border-radius:0px;margin-left:10px;padding:0px 3px 0px 3px;">{{ i[1].honors }}</span>
+            <span class="honors">{{ i[1].honors }}</span>
             {% endif %}
             </p>
 
             <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
-            <p style="color:#696969;">{{ i[1].authors }} </p>
+            <p class="authors">{{ i[1].authors }} </p>
             <div>
             {% for j in i[1].pills %}
             <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
