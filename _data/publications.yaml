@@ -1,5 +1,5 @@
 jiang2024super:
-    color: 1864ab
+    color: "#1864ab"
     venue: CVPR WORKSHOP | 2024
     venue_link: https://cvmi-workshop.github.io/
     link: https://mlins.org/msdsr/
@@ -16,7 +16,7 @@ jiang2024super:
       link: https://mlins-site.s3.amazonaws.com/pdf/posters/jiang2024super.png
     recent: False
 kondepudi2024visual:
-    color: $text-color
+    color: var(--minima-text-color)
     venue: PREPRINT | 2024
     venue_link: https://arxiv.org
     link: https://fastglioma.mlins.org
@@ -27,7 +27,7 @@ kondepudi2024visual:
       link: https://www.researchsquare.com/article/rs-4033133/v1
     recent: False
 lyu2024step:
-    color: $text-color
+    color: var(--minima-text-color)
     venue: ARXIV | 2024
     venue_link: https://arxiv.org
     link: https://arxiv.org/abs/2403.13680
@@ -38,7 +38,7 @@ lyu2024step:
       link: https://arxiv.org/abs/2403.13680
     recent: False
 hou2024self:
-    color: $text-color
+    color: var(--minima-text-color)
     venue: ARXIV | 2024
     venue_link: https://arxiv.org/abs/2402.06188
     link: https://arxiv.org/abs/2402.06188
@@ -49,7 +49,7 @@ hou2024self:
       link: https://arxiv.org/abs/2402.06188
     recent: True
 harake2024development:
-    color: 5c940d
+    color: "#5c940d"
     venue: JOURNAL OF NEUROSURGERY SPINE | 2024
     venue_link: https://thejns.org/
     link: https://mlins.org/spinepose
@@ -64,7 +64,7 @@ harake2024development:
       link: https://doi.org/10.3171/2024.1.SPINE231252
     recent: False
 jiang2022hierarchical:
-    color: 1864ab
+    color: "#1864ab"
     venue: CVPR | 2023
     venue_link: https://cvpr2023.thecvf.com
     link: https://mlins.org/hidisc
@@ -86,7 +86,7 @@ jiang2022hierarchical:
     recent: True
     honors: HIGHLIGHT
 hollon2022ai:
-    color: c92a2a
+    color: "#c92a2a"
     venue: NATURE MEDICINE | 2023
     link: https://deepglioma.mlins.org/
     venue_link: https://www.nature.com/nm/
@@ -106,7 +106,7 @@ hollon2022ai:
           link: https://github.com/MLNeurosurg/deepglioma
     recent: True
 jiang2022opensrh:
-  color: 5f3dc4
+  color: "#5f3dc4"
   venue: NEURIPS DATASETS & BENCHMARKS | 2022
   venue_link: https://neurips.cc/Conferences/2022
   link: https://opensrh.mlins.org/
@@ -130,7 +130,7 @@ jiang2022opensrh:
       link: https://openreview.net/forum?id=2N8JzuiWZ25
   recent: True
 jiang2021rapid:
-  color: c92a2a
+  color: "#c92a2a"
   venue: NEUROSURGERY | 2022
   venue_link: http://neurosurgery-online.com
   link: /publications/jiang2021rapid
@@ -150,7 +150,7 @@ jiang2021rapid:
   recent: True
   honors: COVER
 bagherian2020coupled:
-  color: 0096FF
+  color: "#0096FF"
   venue: BRIEFINGS IN BIOINFORMATICS | 2021
   link: https://doi.org/10.1093/bib/bbaa025
   title: Coupled matrix-matrix and coupled tensor-matrix completion methods for predicting drug-target interactions
@@ -162,7 +162,7 @@ bagherian2020coupled:
     - title: PubMed
       link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7986629/
 li2020prediction:
-  color: c92a2a
+  color: "#c92a2a"
   venue: BIOMEDICAL SIGNAL PROCESSING & CONTROL | 2021
   link: https://doi.org/10.1016/j.bspc.2020.102200
   title: Prediction of cardiac arrhythmia using deterministic probabilistic finite-state automata
@@ -172,7 +172,7 @@ li2020prediction:
     - title: Paper
       link: https://doi.org/10.1016/j.bspc.2020.102200
 farzaneh2020automated:
-  color: 0b7285
+  color: "#0b7285"
   venue: DIAGNOSTICS | 2020
   link: https://doi.org/10.3390/diagnostics10100773
   title: "Segmentation and Severity Analysis of Subdural Hematoma for Patients
@@ -186,7 +186,7 @@ farzaneh2020automated:
       link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7600198/
   recent: False
 jiang2019midline:
-  color: e67700
+  color: "#e67700"
   venue: BIBM | 2019
   venue_link: https://ieeebibm.org/BIBM2019/
   link: "/publications/jiang2019midline"
@@ -203,7 +203,7 @@ jiang2019midline:
       link: /assets/posters/jiang2019midline.pdf
   recent: False
 farzaneh2016automated:
-  color: 5c940d
+  color: "#5c940d"
   venue: EMBC | 2017
   venue_link: https://embc.embs.org/2017/
   link: https://ieeexplore.ieee.org/document/8037505
