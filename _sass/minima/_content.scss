@@ -55,7 +55,7 @@ img.bio-profile {
 .pubcard {
     display: flex;
     flex-direction: row;
-    padding: $spacing-unit * 2 0;
+    margin: 0 0 $spacing-unit * 3 0;
 }
 
 .pubcard .publeft {
@@ -86,7 +86,6 @@ img.bio-profile {
     .pubcard {
         display: flex;
         flex-direction: column;
-        padding: $spacing-unit * 2 0;
     }
 
     .pubcard .publeft,
@@ -119,7 +118,7 @@ img.bio-profile {
 }
 
 .awards .awardcard {
-    margin: $spacing-unit * 2 0;
+    margin: 0 0 $spacing-unit * 2 0;
     padding: $spacing-unit;
     border-radius: $spacing-unit;
     background-color: $pill-color;
@@ -160,11 +159,6 @@ hr.pagediv {
     background-color: $light-text-color;
 }
 
-.pilldiv {
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
-    padding: $spacing-unit;
-}
 
 a.footer_link {
     text-decoration: none;
@@ -246,6 +240,7 @@ a.classname {
 }
 
 a.pill,
+a.centerpill,
 a.morepill {
     text-align: center;
     text-decoration: none;
@@ -253,15 +248,11 @@ a.morepill {
     border-radius: 100px;
 }
 
-a.pill {
-    margin: $spacing-unit / 2;
+a.pill,
+a.centerpill {
     background-color: $pill-color;
     color: $text-color;
-    padding-top: $spacing-unit / 4;
-    padding-bottom: $spacing-unit / 4;
-    padding-left: $spacing-unit;
-    padding-right: $spacing-unit;
-    //font-size: medium;
+    padding: $spacing-unit / 4 $spacing-unit;
     font-weight: 500;
 
     &:visited {
@@ -274,6 +265,19 @@ a.pill {
         color: $text-color;
     }
 }
+
+a.pill {
+    margin: 0 $spacing-unit * 2 0 0;
+}
+
+a.centerpill {
+    margin: 0 $spacing-unit;
+}
+
+.pilldiv {
+    margin: $spacing-unit * 3 0;
+}
+
 
 a.morepill {
     background-color: $link-base-color;
