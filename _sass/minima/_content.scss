@@ -267,11 +267,11 @@ a.centerpill {
 }
 
 a.pill {
-    margin: 0 $spacing-unit * 2 0 0;
+    margin: 0 $spacing-unit 0 0;
 }
 
 a.centerpill {
-    margin: 0 $spacing-unit;
+    margin: $spacing-unit;
 }
 
 .pilldiv {
