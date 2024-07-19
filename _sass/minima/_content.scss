@@ -20,7 +20,7 @@
 
 img.bio-profile {
     width: 100%;
-    border-radius: 10%;
+    border-radius: $spacing-unit; 
 }
 
 
@@ -31,27 +31,23 @@ img.bio-profile {
 
     .bio-right {
         text-align: center;
-        padding-bottom: $spacing-unit;
-        padding-top: $spacing-unit * 2;
+        padding: $spacing-unit * 2 $spacing-unit $spacing-unit $spacing-unit;
+        //padding: $spacing-unit;
+        width: 100%;
     }
 
     .bio-left {
         text-align: justify;
-        padding-top: $spacing-unit;
-        padding-bottom: 0;
+        padding: $spacing-unit;
+        width: 100%;
     }
 
     img.bio-profile {
         min-width: 160px;
         width: 20%;
-        border-radius: 20%;
+        border-radius: $spacing-unit;
     }
 
-    [class*="bio-"] {
-        width: 100%;
-        padding-right: $spacing-unit;
-        padding-left: $spacing-unit;
-    }
 }
 
 
@@ -99,7 +95,7 @@ img.bio-profile {
 .pc-profile {
     width: 100%;
     //border-radius: 10px 0 0 10px;
-    //border-radius: 10px;
+    border-radius: $spacing-unit; // calc(#{$spacing-unit} / 2);
 }
 
 @media only screen and (max-width: $on-palm) {
@@ -108,7 +104,7 @@ img.bio-profile {
         flex-direction: column;
         padding: 0px;
         padding-bottom: $spacing-unit;
-        margin: calc(#{$spacing-unit} * 2) $spacing-unit;
+        margin: calc(#{$spacing-unit} * 2); // $spacing-unit;
         //box-shadow: 0 0 $spacing-unit rgba(0, 0, 0, 0.2);
         //border-radius: 15px;
     }
@@ -459,8 +455,8 @@ span.honors{
   font-weight:bold;
   background-color:#c92a2a;
   color: $background-color;
-  border-radius:0px;
-  margin-left:$spacing-unit;
+  border-radius: 0px;
+  margin-left: $spacing-unit;
   padding:0px 3px 0px 3px;
 }
 
