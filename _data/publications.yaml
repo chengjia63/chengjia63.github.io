@@ -1,3 +1,14 @@
+lyu2024step:
+    color: "#1864ab"
+    venue: AAAI | 2025
+    venue_link: https://arxiv.org
+    link: https://arxiv.org/abs/2403.13680
+    title: Step-Calibrated diffusion for biomedical optical image restoration
+    authors: Yiwei Lyu, Sung Jik Cha, <b>Cheng Jiang,</b>  <span class='dots'>...</span>, Christian Freudiger, Honglak Lee, and Todd Hollon
+    pills:
+    - title: arXiv
+      link: https://arxiv.org/abs/2403.13680
+    recent: False
 hou2024self:
     color: var(--minima-text-color)
     venue: ARXIV | 2024
@@ -26,6 +37,16 @@ kondepudi2024visual:
     - title: HuggingFace
       link: https://huggingface.co/mlinslab/fastglioma
     recent: True
+reinecke2024fast:
+    color: "#1098ad"
+    venue: NEURO-ONCOLOGY
+    venue_link: https://academic.oup.com/neuro-oncology
+    link: https://doi.org/10.1093/neuonc/noae270
+    title: Fast intraoperative detection of primary central nervous system lymphoma and differentiation from common central nervous system tumors using stimulated Raman histology and deep learning
+    authors: David Reinecke, <span class='dots'>...</span>, <b>Cheng Jiang, </b> <span class='dots'>...</span>, and Daniel Orringer
+    pills:
+    - title: Paper
+      link: https://doi.org/10.1093/neuonc/noae270
 jiang2024super:
     color: "#1864ab"
     venue: CVPR WORKSHOP | 2024
@@ -42,17 +63,6 @@ jiang2024super:
       link: https://github.com/MLNeurosurg/msdsr/
     - title: Poster
       link: https://mlins-site.s3.amazonaws.com/pdf/posters/jiang2024super.png
-    recent: False
-lyu2024step:
-    color: var(--minima-text-color)
-    venue: ARXIV | 2024
-    venue_link: https://arxiv.org
-    link: https://arxiv.org/abs/2403.13680
-    title: Step-Calibrated diffusion for biomedical optical image restoration
-    authors: Yiwei Lyu, Sung Jik Cha, <b>Cheng Jiang,</b>  <span class='dots'>...</span>, Christian Freudiger, Honglak Lee, and Todd Hollon
-    pills:
-    - title: arXiv
-      link: https://arxiv.org/abs/2403.13680
     recent: False
 harake2024development:
     color: "#5c940d"
