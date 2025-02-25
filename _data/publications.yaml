@@ -8,6 +8,10 @@ lyu2024step:
     pills:
     - title: arXiv
       link: https://arxiv.org/abs/2403.13680
+    - title: GitHub
+      link: https://github.com/MLNeurosurg/restorative_step-calibrated_diffusion
+    - title: Poster
+      link: https://drive.google.com/file/d/1TjpVt_SjekUG0X3Y-98H_7cjM7NktIEx/view?usp=sharing
     recent: False
 hou2024self:
     color: var(--minima-text-color)
