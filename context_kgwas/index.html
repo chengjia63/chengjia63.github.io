@@ -1,0 +1,75 @@
+---
+layout: default
+title: Context-Aware KGWAS
+---
+
+<div style="margin:20px 0 20px 0; padding: 20px 0 20px 0;">
+    <p style="margin-bottom: 0px; color: #2563eb; font-weight:bold;">
+        ICLR LMRL WORKSHOP 2026
+    </p>
+    <h2 style="margin-bottom:0px; font-weight:bold;">
+        Incorporating contextual information into KGWAS for interpretable GWAS discovery
+    </h2>
+    <p style="margin-bottom:0px; color: #696969; font-weight:bold;">
+        Cheng Jiang<sup>1&sect;</sup>,
+        Brady Ryan<sup>1&sect;</sup>,
+        Megan Crow<sup>2</sup>,
+        Kipper Fletez-Brant2<sup>2</sup>,
+        Kashish Doshi<sup>2</sup>,
+        Sandra Melo Carlos<sup>2</sup>,
+        Kexin Huang<sup>3</sup>,
+        Heming Yao<sup>2&dagger;</sup>,
+        Burkhard Hoeckendorf<sup>2&dagger;</sup>, and
+        David Richmond<sup>2&dagger;</sup>
+    </p>
+    <p style="margin-bottom:10px; color: #696969;">
+        <sup>1</sup>University of Michigan
+        <sup>2</sup>gRED, Genentech
+        <sup>3</sup>Stanford University<br>
+        <sup>&sect;</sup>Work conducted during an internship at Genentech<br>
+        <sup>&dagger;</sup>Correspondence: {yao.heming, hoeckendorf.burkhard, richmond.david} AT gene DOT com
+    </p>
+    <div>
+        <a class="pill" href="https://arxiv.org/abs/2603.25855">arXiv</a>
+        <a class="pill" href="https://openreview.net/forum?id=AIGbjj1eyY">OpenReview</a>
+        <!--a class="pill" href="https://www.youtube.com/watch?v=PkXki83vQqg">Video</a-->
+        <a class="pill" href="/assets/posters/jiang2026incorporating.pdf">Poster</a>
+    </div>
+    <!--hr class="carddiv"-->
+</div>
+<div style="background-color: #f7f7f7; border-radius:10px;padding:15px;margin-top:15px; margin-bottom:15px">
+    <h2 style="font-weight:bold; margin: 0px 0px 10px 0px;"> Abstract </h2>
+    <p style="margin: 0px;">
+    Genome-Wide Association Studies (GWAS) identify associations between genetic variants and disease; however, moving beyond associations to causal mechanisms is critical for therapeutic target prioritization. The recently proposed Knowledge Graph GWAS (KGWAS) framework addresses this challenge by linking genetic variants to downstream gene-gene interactions via a knowledge graph (KG), thereby improving detection power and providing mechanistic insights. However, the original KGWAS implementation relies on a large general-purpose KG, which can introduce spurious correlations. We hypothesize that cell-type specific KGs from disease-relevant cell types will better support disease mechanism discovery. Here, we show that the general-purpose KG in KGWAS can be substantially pruned with no loss of statistical power on downstream tasks, and that performance further improves by incorporating gene–gene relationships derived from perturb-seq data. Importantly, using a sparse, context-specific KG from direct perturb-seq evidence yields more consistent and biologically robust disease-critical networks.
+    </p>
+</div>
+
+<!--div style="position: relative; border-radius:10px; padding:0px;
+padding-bottom: 56.25%; margin-top:20px">
+    <iframe src="https://www.youtube.com/embed/PkXki83vQqg"
+    style="border-radius:10px;position:absolute;top:0;left:0;width:100%;
+    height:100%" title="HiDisc Presentation" frameborder="0px"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+    picture-in-picture" allowfullscreen></iframe>
+</div-->
+
+<div style="background-color: #f7f7f7; border-radius:10px;padding:15px;margin-top:15px; margin-bottom:15px">
+    <h2 style="font-weight:bold; margin: 0px 0px 10px 0px;"> 
+        Workflow</h2>
+    <p style="margin-top: 10px; margin-bottom:0px;">
+    TODO
+    </p>
+</div>
+
+<div style="background-color: #f7f7f7; border-radius:10px;padding:15px;margin-top:15px; margin-bottom:15px">
+    <h2 style="font-weight:bold; margin: 0px 0px 10px 0px;">Bibtex</h2>
+    <pre style="margin-bottom:0px; background-color: #dddddd; border-color: #aaaaaa">
+@inproceedings{
+  jiang2026incorporating,
+  title={Incorporating contextual information into {KGWAS} for interpretable {GWAS} discovery},
+  author={Cheng Jiang and Brady Ryan and Megan Crow and Kipper Fletez-Brant and Kashish Doshi and Sandra Melo and Kexin Huang and Burkhard Hoeckendorf and Heming Yao and David Richmond},
+  booktitle={Learning Meaningful Representations of Life (LMRL) Workshop at ICLR 2026},
+  year={2026},
+}
+</pre>
+</div>
