@@ -321,3 +321,59 @@ span.dots {
     //background-color:#f1f3f5;
     color: $light-text-color;
 }
+
+.page {
+    margin: $spacing-unit * 2 0 $spacing-unit * 2 0;
+    padding: $spacing-unit * 2 0 $spacing-unit * 2 0;
+}
+
+.page-accent {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.page-title {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.page-meta,
+.page-affiliations {
+    color: $light-text-color;
+}
+
+.page-meta {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.page-affiliations {
+    margin-bottom: $spacing-unit;
+}
+
+.page-card {
+    margin: $spacing-unit * 1.5 0;
+    padding: $spacing-unit * 1.5;
+    border-radius: $spacing-unit;
+    background-color: $pill-color;
+}
+
+.page-card-title {
+    margin: 0 0 $spacing-unit 0;
+    font-weight: bold;
+}
+
+.page-card-body {
+    margin: 0;
+}
+
+.page-card-body-spaced {
+    margin-top: $spacing-unit;
+}
+
+.page-bibtex {
+    margin-bottom: 0;
+    border-color: $border-color-01;
+    background-color: $code-background-color;
+    color: $text-color;
+}

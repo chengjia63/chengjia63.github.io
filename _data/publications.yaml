@@ -1,6 +1,6 @@
 jiang2026incorporating:
   venue: ICLR LMRL WORKSHOP | 2026
-  link: https://openreview.net/forum?id=AIGbjj1eyY
+  link: /context_kgwas/
   title: Incorporating contextual information into KGWAS for interpretable GWAS discovery
   authors: <b>Cheng Jiang,</b> <span class='dots'>...</span>, Burkhard Hoeckendorf, Heming Yao, and David Richmond
   pills:
@@ -97,7 +97,7 @@ hou2024self:
     pills:
     - title: arXiv
       link: https://arxiv.org/abs/2402.06188
-    recent: True
+    recent: False
 kondepudi2024visual:
     color: var(--minima-text-color)
     venue: NATURE | 2024
