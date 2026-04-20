@@ -2,8 +2,8 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue","Helvetica","Arial",sans-serif !default;
-$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$base-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", "Arial", sans-serif !default;
+$code-font-family: ui-monospace, "SFMono-Regular", Menlo, "Roboto Mono", Inconsolata, Consolas, "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
