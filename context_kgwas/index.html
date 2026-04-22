@@ -30,41 +30,79 @@ title: Context-Aware KGWAS
         <sup>&dagger;</sup>Correspondence: {yao.heming, hoeckendorf.burkhard, richmond.david} AT gene DOT com
     </p>
     <div>
-        <a class="pill" href="https://arxiv.org/abs/2603.25855">arXiv</a>
-        <a class="pill" href="https://openreview.net/forum?id=AIGbjj1eyY">OpenReview</a>
-        <a class="pill" href="/assets/posters/jiang2026incorporating.pdf">Poster</a>
+        <a class="pill" style="margin-bottom: 0px" href="https://arxiv.org/abs/2603.25855">arXiv</a>
+        <a class="pill" style="margin-bottom: 0px" href="https://openreview.net/forum?id=AIGbjj1eyY">OpenReview</a>
+        <a class="pill" style="margin-bottom: 0px" href="/assets/posters/jiang2026incorporating.pdf">Poster</a>
     </div>
-    <!--hr class="carddiv"-->
 </div>
 
-<div style="position: relative; border-radius:10px; padding:0px;
-padding-bottom: 56.25%; margin-top:20px">
-    <iframe src="https://www.youtube.com/embed/pfMn8gmoZEg"
-    style="border-radius:10px;position:absolute;top:0;left:0;width:100%;
-    height:100%" title="Context-aware KGWAS Presentation" frameborder="0px"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-    picture-in-picture" allowfullscreen></iframe>
+<hr class="page-divider">
+
+<div class="page-embed-card">
+  <iframe
+    src="https://www.youtube.com/embed/pfMn8gmoZEg"
+    title="Context-aware KGWAS Presentation"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
 </div>
 
-<div class="page-card">
+<hr class="page-divider">
+
+<div class="page-card" style="margin: 25px 0px; outline: 5px  solid {$pill-color};">
     <h2 class="page-card-title">Abstract</h2>
-    <p class="page-card-body">
+    <p class="page-card-body page-card-body-spaced">
     Genome-Wide Association Studies (GWAS) identify associations between genetic variants and disease; however, moving beyond associations to causal mechanisms is critical for therapeutic target prioritization. The recently proposed Knowledge Graph GWAS (KGWAS) framework addresses this challenge by linking genetic variants to downstream gene-gene interactions via a knowledge graph (KG), thereby improving detection power and providing mechanistic insights. However, the original KGWAS implementation relies on a large general-purpose KG, which can introduce spurious correlations. We hypothesize that cell-type specific KGs from disease-relevant cell types will better support disease mechanism discovery. Here, we show that the general-purpose KG in KGWAS can be substantially pruned with no loss of statistical power on downstream tasks, and that performance further improves by incorporating gene–gene relationships derived from perturb-seq data. Importantly, using a sparse, context-specific KG from direct perturb-seq evidence yields more consistent and biologically robust disease-critical networks.
     </p>
 </div>
 
+<hr class="page-divider">
 
 <div class="page-card">
     <h2 class="page-card-title">Workflow</h2>
+    <img src="/assets/context_kgwas/fig.workflow.png" alt="workflow">
     <p class="page-card-body page-card-body-spaced">
-    TODO
+    A. The original KG in KGWAS consisting of variant-gene,
+gene-gene and gene-program edges; B. Our extension to KGWAS: (left) removing gene-program
+edges, and sparsifying remaining connections; (right) replacing gene-gene edges with contextually
+relevant relationships derived from Perturb-seq.
     </p>
 </div>
 
+<hr class="page-divider">
+
+<div class="page-card">
+    <h2 class="page-card-title">Context-aware KGWAS improves hit detection while reducing graph size</h2>
+
+    <img src="/assets/context_kgwas/fig.main.ablation_10000.png" alt="results">
+    <p class="page-card-body page-card-body-spaced">
+    Contributions of different nodes and edge types in the KGWAS knowledge graph using a
+sample size of 10,000. Reported metrics are the total number of recalled independent loci summed
+across three selected traits. Standard deviations are computed across three training runs with different
+random seeds. In each subplot, bold indicates the model selected as the baseline in the subsequent
+panel. (A) Ablation of different relation types; (B) Ablation of V2G and G2G edge types; (C)
+Collapsing V2G and G2G edge types; (D) Adding context-specific information.
+    </p>
+
+<hr class="page-divider">
+
+    <h2 class="page-card-title">Context-aware KGWAS improves interpretability of disease critical networks
+    </h2>
+    <img
+      src="/assets/context_kgwas/fig.main.dcn.png"
+      alt="disease critical network"
+      style="display: block; width: min(100%, 500px); margin: 0 auto;"
+    >
+
+    <p class="page-card-body page-card-body-spaced">
+    Consistency of disease critical networks for the rs61759901 variant in KGWAS (left) and context- aware KGWAS (right). Each plot aggregate nodes and edges from three seeded models trained on the MCH trait. Genes that are not significant in the K562 cell line (n=6) are shown with a gray border.
+    </p>
+</div>
+<hr class="page-divider">
 <div class="page-card">
     <h2 class="page-card-title">Bibtex</h2>
-    <pre class="page-bibtex">
-@inproceedings{
+    <pre class="page-bibtex"> @inproceedings{
   jiang2026incorporating,
   title={Incorporating contextual information into {KGWAS} for interpretable {GWAS} discovery},
   author={Cheng Jiang and Brady Ryan and Megan Crow and Kipper Fletez-Brant and Kashish Doshi and Sandra Melo and Kexin Huang and Burkhard Hoeckendorf and Heming Yao and David Richmond},

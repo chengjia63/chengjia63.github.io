@@ -323,8 +323,13 @@ span.dots {
 }
 
 .page {
-    margin: $spacing-unit * 2 0 $spacing-unit * 2 0;
-    padding: $spacing-unit * 2 0 $spacing-unit * 2 0;
+    margin: $spacing-unit * 2 0;
+}
+
+.page-divider {
+  border: 0;
+  border-top: 2px solid $pill-color;
+  margin: 24px 0;
 }
 
 .page-accent {
@@ -351,11 +356,31 @@ span.dots {
     margin-bottom: $spacing-unit;
 }
 
+
+.page-embed-card {
+  position: relative;
+  margin: 25px 0;
+  padding: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 10px;
+  //outline: 2px solid $pill-color;
+}
+
+.page-embed-card iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .page-card {
-    margin: $spacing-unit * 1.5 0;
-    padding: $spacing-unit * 1.5;
+    margin: $spacing-unit 0;
+    //padding: $spacing-unit * 1;
     border-radius: $spacing-unit;
-    background-color: $pill-color;
+    //background-color: $pill-color;
+    //outline: 2px  solid $pill-color;
 }
 
 .page-card-title {
@@ -369,6 +394,7 @@ span.dots {
 
 .page-card-body-spaced {
     margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit*2;
 }
 
 .page-bibtex {
