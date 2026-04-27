@@ -581,7 +581,7 @@ span.decor{
   font-weight:bold;
   font-style: italic;
   text-transform: uppercase;
-  background-color: #d97706;
+  background-color: #ca8a04;
   color: #ffffff;
   border-radius: 0px;
   margin-left: $spacing-unit;
@@ -590,7 +590,7 @@ span.decor{
 
 @media (prefers-color-scheme: dark) {
     span.decor {
-        background-color: #60a5fa;
+        background-color: #facc15;
         color: #111827;
     }
 }
@@ -615,7 +615,7 @@ span.dots {
 .page-accent {
     margin-bottom: 0;
     font-weight: bold;
-    color: $link-base-color;
+    color: $brand-color;
     font-style: italic;
     font-size: $base-font-size;
 }
@@ -624,7 +624,7 @@ span.dots {
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
-    background-color: #d97706;
+    background-color: #ca8a04;
     color: #ffffff;
     margin-left: $spacing-unit;
     padding: 2px 4px;
@@ -632,7 +632,7 @@ span.dots {
 
 @media (prefers-color-scheme: dark) {
     .page-decor {
-        background-color: #fbbf24;
+        background-color: #facc15;
         color: #111827;
     }
 }

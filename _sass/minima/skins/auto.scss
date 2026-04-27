@@ -11,7 +11,7 @@ $surface-radius: 18px !default;
 // Light mode
 // ----------
 
-$lm-brand-color:           #fafafa !default;
+$lm-brand-color:           #2563eb !default;
 $lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
 
@@ -114,7 +114,7 @@ $lm-venue-color:           $lm-light-text-color !default;
 // Dark mode
 // ---------
 
-$dm-brand-color:           #09090b !default;
+$dm-brand-color:           #60a5fa !default;
 $dm-brand-color-light:     lighten($dm-brand-color, 5%) !default;
 $dm-brand-color-dark:      darken($dm-brand-color, 35%) !default;
 
