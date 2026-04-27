@@ -22,9 +22,20 @@ layout: default
                     Marching Band</a>.
             </p>
 
-            <div style="display: flex; flex-direction: row; justify-content:center; flex-wrap: wrap;">
-                <a class="centerpill" href="https://scholar.google.com/citations?user=T9GuTDIAAAAJ&hl=en">Google Scholar</a>
-                <a class="centerpill" href="https://www.linkedin.com/in/chengjia63/">LinkedIn</a>
+            <div class="centerpill-row">
+                <div class="centerpill-group" id="contact-pill-group">
+                    <a class="centerpill centerpill-link" href="https://scholar.google.com/citations?user=T9GuTDIAAAAJ&hl=en">Google Scholar</a>
+                    <a class="centerpill centerpill-link" href="https://www.linkedin.com/in/chengjia63/">LinkedIn</a>
+                    <button class="centerpill centerpill-email-trigger" type="button" aria-controls="centerpill-email" aria-expanded="false">Email</button>
+                    <div class="centerpill-email" id="centerpill-email" aria-live="polite">
+                        <span>chengjia AT umich DOT edu</span>
+                        <button class="centerpill-email-close" type="button" aria-label="Close email">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 9l6 6M15 9l-6 6"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="bio-right">
@@ -32,118 +43,93 @@ layout: default
         </div>
     </div>
 
-    <h3 style="font-weight:bold;">Recent Publications</h3>
-    {% for i in site.data.publications %}
-    {% if i[1].recent %}
-    <div class="pubcard">
-        <div class="publeft">
-            <img src="/assets/images/{{ i[0] }}.png" class="pc-profile">
-        </div>
-        <div class="pubright">
-            {% if i[1].venue_link %}
-            <p style="color:{{ i[1].color }}; margin: 0px;">
-                <a class="venue" href="{{ i[1].venue_link }}" style="color:{{ i[1].color }};">
-                {{ i[1].venue }}</a>
-            {% else %}
-            <p style="color:{{ i[1].color }}; margin: 0px; font-weight:bold;">
-                {{ i[1].venue }}
-            {% endif %}
-
-            {% if i[1].honors %}
-            <span class="honors">{{ i[1].honors }}</span>
-            {% endif %}
-
-            </p>
-
-            <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
-            <p class="authors">{{ i[1].authors }} </p>
-
-            <div>
-            {% for j in i[1].pills %}
-            <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
-            {% endfor %}
-            </div>
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-    <div class="pilldiv">
+    <div class="home-section-head">
+        <h3 style="font-weight:bold;">Recent Publications</h3>
         <a class="morepill" href="/publications">More Publications</a>
     </div>
-
-    <!--h3 style="font-weight:bold;">Preprints</h3>
-    {% for i in site.data.preprints %}
+    <div class="pubgroup">
+    {% for i in site.data.publications %}
     {% if i[1].recent %}
-    <div class="pubcard">
-        <div class="publeft">
-            <img src="/assets/images/{{ i[0] }}.png" class="pc-profile">
-        </div>
-        <div class="pubright">
-            <p style="color:{{ i[1].color }}; margin: 0px; font-weight:bold">
-                {{ i[1].venue }}</p>
-            <a class="publication" href="{{ i[1].link }}">{{ i[1].title }}</a>
-            <p style="color:#696969;">{{ i[1].authors }} </p>
-            <div>
-            {% for j in i[1].pills %}
-            <a class="pill" href="{{ j.link }}">{{ j.title }}</a>
-            {% endfor %}
-            </div>
-        </div>
-    </div>
+    {% assign pub_key = i[0] %}
+    {% assign pub_item = i[1] %}
+    {% include publication_card.html key=pub_key pub=pub_item %}
     {% endif %}
     {% endfor %}
-    -->
+    </div>
+
     <h3 style="font-weight:bold;">Awards</h3>
     <div class="awards">
         {% for i in site.data.awards %}
         <div class="awardcard">
+            {% assign award_year = i.time | split: " " | last %}
             <div class="awardname">
                 <a class="award" href="{{ i.link }}">{{ i.award }}</a>
             </div>
-            <p class="awarder">{{ i.awarder }} | {{ i.time }}</p>
+            <p class="award-kicker">{{ i.awarder_short }}, {{ award_year }}{% if i.award_detail %}, {{ i.award_detail }}{% endif %}</p>
         </div>
         {% endfor %}
     </div>
 
     <h3 style="font-weight:bold;">Teaching</h3>
     <div class="awards">
+        {% comment %}
         <div class="awardcard">
-            <div class="awarder">
-            <a href="https://culture.engin.umich.edu/k-12/ai4all/">Summer
-            Program</a>&nbsp;@ University of Michigan
-            </div>
-
             <div class="awardname">
-                <a class="classname" style="color:#FF9300"
+                <a class="classname"
                     href="https://ai-4-all.org">
                     AI4ALL
                 </a>
             </div>
 
+            <div class="awarder">
+            <a href="https://culture.engin.umich.edu/k-12/ai4all/">Summer
+            Program</a>&nbsp;@ University of Michigan
+            </div>
+
             <p class="awarder">Summer 2022 | Summer 2021 </p>
         </div>
+        {% endcomment %}
 
         <div class="awardcard">
-            <p class="awarder">
+            <div class="awardname">
+                <a class="classname"
+                    href="https://engr101.org/">
+                    Introduction to Computers & Programming
+                </a>
+            </div>
+
+            <p class="award-kicker">
             <a href="https://adue.engin.umich.edu/engineering-101-introduction-to-computers-and-programming/">ENGR
             101</a>&nbsp;@ University of Michigan
             </p>
 
-            <p class="awardname">
-                <a class="classname" style="color:#7326CD"
-                    href="https://engr101.org/">
-                    Introduction to Computers & Programming
-                </a>
-            </p>
-
-            <p class="awarder">
-                <a href="https://engr101staff.github.io/engr101.org/archive/w21_site.html">
-                Winter 2021</a> |
-                <a href="https://engr101staff.github.io/engr101.org/archive/f20_site.html">
-                Fall 2020</a> |
-                Winter 2020 | Fall 2019
-            </p>
+            <div class="teaching-terms">
+                <a class="pill" href="https://engr101staff.github.io/engr101.org/archive/w21_site.html">Winter 2021</a>
+                <a class="pill" href="https://engr101staff.github.io/engr101.org/archive/f20_site.html">Fall 2020</a>
+                <span class="pill">Winter 2020</span>
+                <span class="pill">Fall 2019</span>
+            </div>
         </div>
     </div>
-
 </div>
+
+<script>
+    (function () {
+        var group = document.getElementById("contact-pill-group");
+        if (!group) return;
+
+        var trigger = group.querySelector(".centerpill-email-trigger");
+        var close = group.querySelector(".centerpill-email-close");
+
+        trigger.addEventListener("click", function () {
+            group.classList.add("is-email-open");
+            trigger.setAttribute("aria-expanded", "true");
+        });
+
+        close.addEventListener("click", function () {
+            group.classList.remove("is-email-open");
+            trigger.setAttribute("aria-expanded", "false");
+            trigger.focus();
+        });
+    })();
+</script>

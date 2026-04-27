@@ -1,0 +1,21 @@
+<div class="pubcard">
+    <div class="publeft">
+        <img src="/assets/images/{{ include.key }}.png" class="pc-profile">
+    </div>
+    <div class="pubright">
+        <a class="publication" href="{{ include.pub.link }}">{{ include.pub.title }}</a>
+        <p class="authors">{{ include.pub.authors }} </p>
+        <p class="venue-line">
+            {{ include.pub.venue }}
+            {% if include.pub.honors %}
+            <span class="decor">{{ include.pub.honors }}</span>
+            {% endif %}
+        </p>
+
+        <div class="pub-actions">
+        {% for pill in include.pub.pills %}
+        <a class="pill" href="{{ pill.link }}">{{ pill.title }}</a>
+        {% endfor %}
+        </div>
+    </div>
+</div>

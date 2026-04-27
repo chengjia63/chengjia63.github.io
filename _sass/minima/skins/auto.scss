@@ -5,39 +5,43 @@
 
 $color-scheme-auto: true !default;
 $color-scheme-dark: false !default;
+$surface-radius: 18px !default;
 
 
 // Light mode
 // ----------
 
-$lm-brand-color:           #828282 !default;
+$lm-brand-color:           #fafafa !default;
 $lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
 
-$lm-site-title-color:      #000000 !default; //$lm-brand-color-dark !default;
+$lm-site-title-color:      #18181b !default; //$lm-brand-color-dark !default;
 
-$lm-text-color:            #000000 !default;
-$lm-background-color:      #ffffff !default;
-$lm-code-background-color: #F5F5F5 !default;
+$lm-text-color:            #18181b !default;
+$lm-background-color:      #fafafa !default;
+$lm-code-background-color: #e4e4e7 !default;
 
-$lm-link-base-color:       #005493 !default;
+$lm-link-base-color:       #1e40af !default;
 $lm-link-visited-color:    $lm-link-base-color !default;
 $lm-link-hover-color:      $lm-text-color !default;
 
-$lm-border-color-01:       #D6D6D6 !default; // $lm-brand-color-light !default;
-$lm-border-color-02:       lighten($lm-brand-color, 35%) !default;
-$lm-border-color-03:       $lm-brand-color-dark !default;
+$lm-border-color-01:       #e4e4e7 !default;
+$lm-border-color-02:       #d4d4d8 !default;
+$lm-border-color-03:       #a1a1aa !default;
 
-$lm-table-text-color:      lighten($lm-text-color, 18%) !default;
-$lm-table-zebra-color:     lighten($lm-brand-color, 46%) !default;
-$lm-table-header-bg-color: lighten($lm-brand-color, 43%) !default;
-$lm-table-header-border:   lighten($lm-brand-color, 37%) !default;
+$lm-table-text-color:      $lm-text-color !default;
+$lm-table-zebra-color:     #fafafa !default;
+$lm-table-header-bg-color: #e4e4e7 !default;
+$lm-table-header-border:   #d4d4d8 !default;
 $lm-table-border-color:    $lm-border-color-01 !default;
 
-$lm-pill-color:            #F5F5F5 !default; //darken($lm-background-color, 10%) !default; 
-$lm-interact-pill-color:   #EBEBEB !default; //darken($lm-background-color, 20%) !default; 
-$lm-negative-pill-color:   #212121 !default; //lighten($lm-text-color, 10%) !default; 
-$lm-light-text-color:      #5E5E5E !default; //#bbbbbb !default;
+$lm-pill-color:            #e4e4e7 !default;
+$lm-interact-pill-color:   #e4e4e7 !default;
+$lm-negative-pill-color:   #27272a !default;
+$lm-light-text-color:      #52525b !default;
+$lm-button-surface-color:  #e4e4e7 !default;
+$lm-button-hover-color:    #d4d4d8 !default;
+$lm-venue-color:           $lm-light-text-color !default;
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
 // ----------------------------------------------------------------------------
@@ -110,34 +114,37 @@ $lm-light-text-color:      #5E5E5E !default; //#bbbbbb !default;
 // Dark mode
 // ---------
 
-$dm-brand-color:           #999999 !default;
+$dm-brand-color:           #09090b !default;
 $dm-brand-color-light:     lighten($dm-brand-color, 5%) !default;
 $dm-brand-color-dark:      darken($dm-brand-color, 35%) !default;
 
-$dm-site-title-color:      #ffffff !default; //$dm-brand-color-light !default;
+$dm-site-title-color:      #fafafa !default; //$dm-brand-color-light !default;
 
-$dm-text-color:            #ffffff !default; //#bbbbbb !default;
-$dm-background-color:      #000000 !default; //#181818 !default;
-$dm-code-background-color: #212121 !default;
+$dm-text-color:            #fafafa !default;
+$dm-background-color:      #09090b !default;
+$dm-code-background-color: #18181b !default;
 
-$dm-link-base-color:       #79b8ff !default;
+$dm-link-base-color:       #bfdbfe !default;
 $dm-link-visited-color:    $dm-link-base-color !default;
 $dm-link-hover-color:      $dm-text-color !default;
 
-$dm-border-color-01:       #424242 !default; //$dm-brand-color-dark !default;
-$dm-border-color-02:       $dm-brand-color-light !default;
-$dm-border-color-03:       $dm-brand-color !default;
+$dm-border-color-01:       #3f3f46 !default;
+$dm-border-color-02:       #52525b !default;
+$dm-border-color-03:       #71717a !default;
 
 $dm-table-text-color:      $dm-text-color !default;
-$dm-table-zebra-color:     lighten($dm-background-color, 4%) !default;
-$dm-table-header-bg-color: lighten($dm-background-color, 10%) !default;
-$dm-table-header-border:   lighten($dm-background-color, 21%) !default;
+$dm-table-zebra-color:     #18181b !default;
+$dm-table-header-bg-color: #27272a !default;
+$dm-table-header-border:   #3f3f46 !default;
 $dm-table-border-color:    $dm-border-color-01 !default;
 
-$dm-pill-color:            #212121 !default; //lighten($dm-background-color, 12%) !default; 
-$dm-interact-pill-color:   #424242 !default; //lighten($dm-background-color, 20%) !default; 
-$dm-negative-pill-color:   #EBEBEB !default; //darken($dm-text-color, 10%) !default; 
-$dm-light-text-color:      #A9A9A9 !default; //#bbbbbb !default;
+$dm-pill-color:            #18181b !default;
+$dm-interact-pill-color:   #27272a !default;
+$dm-negative-pill-color:   #e4e4e7 !default;
+$dm-light-text-color:      #a1a1aa !default;
+$dm-button-surface-color:  #27272a !default;
+$dm-button-hover-color:    #3f3f46 !default;
+$dm-venue-color:           $dm-light-text-color !default;
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
 // List of tokens: https://github.com/rouge-ruby/rouge/wiki/List-of-tokens
@@ -246,6 +253,9 @@ $pill-color: $lm-pill-color;
 $negative-pill-color: $lm-negative-pill-color;
 $interact-pill-color: $lm-interact-pill-color;
 $light-text-color: $lm-light-text-color;
+$button-surface-color: $lm-button-surface-color;
+$button-hover-color: $lm-button-hover-color;
+$venue-color: $lm-venue-color;
 
 @if $color-scheme-auto {
 
@@ -280,6 +290,9 @@ $light-text-color: $lm-light-text-color;
     --minima-negative-pill-color: #{$lm-negative-pill-color};
     --minima-interact-pill-color: #{$lm-interact-pill-color};
     --minima-light-text-color: #{$lm-light-text-color};
+    --minima-button-surface-color: #{$lm-button-surface-color};
+    --minima-button-hover-color: #{$lm-button-hover-color};
+    --minima-venue-color: #{$lm-venue-color};
   }
 
   @include lm-highlight;
@@ -314,6 +327,9 @@ $light-text-color: $lm-light-text-color;
       --minima-negative-pill-color: #{$dm-negative-pill-color};
       --minima-interact-pill-color: #{$dm-interact-pill-color};
       --minima-light-text-color: #{$dm-light-text-color};
+      --minima-button-surface-color: #{$dm-button-surface-color};
+      --minima-button-hover-color: #{$dm-button-hover-color};
+      --minima-venue-color: #{$dm-venue-color};
     }
 
     @include dm-highlight;
@@ -347,6 +363,9 @@ $light-text-color: $lm-light-text-color;
   $negative-pill-color: var(--minima-negative-pill-color);
   $interact-pill-color: var(--minima-interact-pill-color);
   $light-text-color: var(--minima-light-text-color);
+  $button-surface-color: var(--minima-button-surface-color);
+  $button-hover-color: var(--minima-button-hover-color);
+  $venue-color: var(--minima-venue-color);
 
 } @else if $color-scheme-dark {
 
@@ -380,6 +399,9 @@ $light-text-color: $lm-light-text-color;
   $negative-pill-color: $dm-negative-pill-color;
   $interact-pill-color: $dm-interact-pill-color;
   $light-text-color: $dm-light-text-color;
+  $button-surface-color: $dm-button-surface-color;
+  $button-hover-color: $dm-button-hover-color;
+  $venue-color: $dm-venue-color;
 
   @include dm-highlight;
 

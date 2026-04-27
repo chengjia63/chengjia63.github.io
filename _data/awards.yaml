@@ -1,29 +1,38 @@
 - award: <span style="font-weight:900;">F31</span> Individual Predoctoral Fellowship
   link: https://researchtraining.nih.gov/programs/fellowships/F31
   awarder: National Institute of Neurological Disorders and Stroke | <a href="https://reporter.nih.gov/project-details/10824645">NIH/NINDS F31NS135973</a>
-  time: December 2023
+  awarder_short: National Institutes of Health
+  award_detail: <a href="https://reporter.nih.gov/project-details/10824645">NIH/NINDS F31NS135973</a>
+  time: January 2024
 - award: Outstanding Graduate Student Instructor Award
   link: https://rackham.umich.edu/discover-rackham/announcing-the-2022-outstanding-graduate-student-instructor-awards/
   awarder: University of Michigan Rackham Graduate School
+  awarder_short: University of Michigan Rackham Graduate School
   time: April 2022
 - award: Biomedical Informatics &amp; Data Science Training Program Fellowship
   link: https://bids-tp.umich.edu/home
   awarder: University of Michigan | <a
     href="https://reporter.nih.gov/project-details/10204560">NIH/NIGMS T32GM141746</a>
+  awarder_short: University of Michigan
+  award_detail: <a href="https://reporter.nih.gov/project-details/10204560">NIH/NIGMS T32GM141746</a>
   time: August 2021
 - award: Graduate Research Fellowships Program Honorable Mention
   link: https://cse.engin.umich.edu/stories/six-cse-students-recognized-by-nsf-graduate-research-fellowship-program
   awarder: National Science Foundation
+  awarder_short: National Science Foundation
   time: March 2021
 - award: Donald R. Shepherd Graduate Fellowship
   link: https://www.michiganmarchingband.com/endowed-funds
   awarder: University of Michigan Marching Band
+  awarder_short: University of Michigan Marching Band
   time: May 2019
 - award: Outstanding Research Award
   link: https://ece.engin.umich.edu/stories/2018-19-undergraduate-student-awards
   awarder: University of Michigan EECS Department
+  awarder_short: University of Michigan EECS Department
   time: March 2019
 - award: James B. Angell Scholar
   link: https://honors.umich.edu/awards.php
   awarder: University of Michigan
+  awarder_short: University of Michigan
   time: March 2017

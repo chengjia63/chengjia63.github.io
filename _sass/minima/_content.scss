@@ -20,7 +20,35 @@
 
 img.bio-profile {
     width: 100%;
-    border-radius: $spacing-unit; 
+    border-radius: $surface-radius;
+}
+
+.home-section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $spacing-unit;
+    margin-top: $spacing-unit * 3;
+    margin-bottom: $spacing-unit;
+}
+
+.home-section-head h3 {
+    margin: 0;
+}
+
+.post-content > h3[style] {
+    margin-top: $spacing-unit * 3;
+    margin-bottom: $spacing-unit;
+}
+
+.home-section-head .morepill {
+    padding-top: $spacing-unit * 0.8;
+    padding-bottom: $spacing-unit * 0.8;
+    padding-left: $spacing-unit * 1.6;
+    padding-right: $spacing-unit * 1.6;
+    font-size: inherit;
+    margin-left: auto;
 }
 
 
@@ -44,7 +72,12 @@ img.bio-profile {
     img.bio-profile {
         min-width: 160px;
         width: 20%;
-        border-radius: $spacing-unit;
+        border-radius: $surface-radius;
+    }
+
+    .home-section-head .morepill {
+        padding-top: $spacing-unit * 0.8;
+        padding-bottom: $spacing-unit * 0.8;
     }
 
 }
@@ -52,15 +85,35 @@ img.bio-profile {
 
 
 // Papers
+.pubgroup {
+    margin: 0 0 $spacing-unit * 2 0;
+    border-radius: $surface-radius;
+    background-color: rgba($pill-color, 0.45);
+    overflow: hidden;
+}
+
 .pubcard {
     display: flex;
     flex-direction: row;
-    margin: 0 0 $spacing-unit * 3 0;
+    margin: 0;
+    padding: $spacing-unit * 2;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.pubcard + .pubcard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(28% + #{$spacing-unit * 0.9} + #{$spacing-unit * 1.1});
+    right: $spacing-unit * 1.1;
+    height: 1px;
+    background-color: $border-color-01;
 }
 
 .pubcard .publeft {
-    width: 30%;
-    padding-right: $spacing-unit;
+    width: 28%;
+    padding-right: $spacing-unit * 0.9;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -71,21 +124,63 @@ img.bio-profile {
     padding-left: $spacing-unit;
     display: flex;
     flex-direction: column;
+    gap: $spacing-unit / 3;
     width: 70%;
     text-align: left;
     align-items: start;
     justify-content: center;
 }
 
+.pubcard .publication {
+    display: block;
+    font-size: $base-font-size * 1.15;
+    line-height: 1.35;
+}
+
+.pubcard .authors,
+.pubcard .venue-line,
+.pubcard .pill {
+    font-size: $base-font-size;
+    line-height: 1.35;
+}
+
+.pubcard .venue-line,
+.pubcard .venue-line .decor {
+    font-size: $base-font-size;
+}
+
+.pubcard .authors,
+.pubcard .venue-line {
+    margin: 0;
+}
+
+.pub-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-unit * 0.65 $spacing-unit * 1.15;
+    margin-top: $spacing-unit * 0.75;
+}
+
 .pc-profile {
     width: 100%;
-    border-radius: $spacing-unit;
+    border-radius: 0;
+}
+
+.pubcard .pill {
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.5;
+    padding-top: $spacing-unit * 0.2;
+    padding-bottom: $spacing-unit * 0.2;
+    padding-left: $spacing-unit * 1.15;
+    padding-right: $spacing-unit * 1.15;
 }
 
 @media only screen and (max-width: $on-palm) {
     .pubcard {
         display: flex;
         flex-direction: column;
+        padding: $spacing-unit * 2;
     }
 
     .pubcard .publeft,
@@ -98,6 +193,12 @@ img.bio-profile {
     .pubcard .publeft {
         text-align: center;
         padding-bottom: $spacing-unit;
+        padding-right: 0;
+    }
+
+    .pubcard + .pubcard::before {
+        left: $spacing-unit;
+        right: $spacing-unit;
     }
 
     .pubcard .pubright {
@@ -109,21 +210,65 @@ img.bio-profile {
     .pc-profile {
         min-width: 160px;
         width: 100%;
-        //border-radius: 15px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .pubcard {
+        background-color: #18181b;
+    }
+
+    .pubcard + .pubcard::before {
+        background-color: #3f3f46;
     }
 }
 
 // cards
 .awards {
+    margin: 0 0 $spacing-unit * 2 0;
+    border-radius: $surface-radius;
+    background-color: rgba($pill-color, 0.45);
+    overflow: hidden;
 }
 
 .awards .awardcard {
-    margin: 0 0 $spacing-unit * 2 0;
-    padding: $spacing-unit;
-    border-radius: $spacing-unit;
-    background-color: $pill-color;
+    margin: 0;
+    padding: $spacing-unit * 2;
+    background-color: #ffffff;
     justify-items: center;
     width: 100%;
+    position: relative;
+}
+
+.awards .awardcard + .awardcard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: $spacing-unit * 2;
+    right: $spacing-unit * 2;
+    height: 1px;
+    background-color: $border-color-01;
+}
+
+@media only screen and (max-width: $on-palm) {
+    .awards .awardcard {
+        padding: $spacing-unit * 2;
+    }
+
+    .awards .awardcard + .awardcard::before {
+        left: $spacing-unit * 2;
+        right: $spacing-unit * 2;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .awards .awardcard {
+        background-color: #18181b;
+    }
+
+    .awards .awardcard + .awardcard::before {
+        background-color: #3f3f46;
+    }
 }
 
 
@@ -137,7 +282,34 @@ img.bio-profile {
 
 .awarder {
     color: $light-text-color;
+    font-weight: 400;
+    font-size: $base-font-size;
+    line-height: 1.35;
+}
+
+.award-kicker {
+    color: $venue-color;
     font-weight: bold;
+    font-style: italic;
+    font-size: $base-font-size;
+    line-height: 1.35;
+    margin: 0 0 $spacing-unit / 6 0;
+}
+
+.teaching-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-unit * 0.65 $spacing-unit * 1.15;
+    margin-top: $spacing-unit * 0.75;
+}
+
+.teaching-terms .pill {
+    margin: 0;
+    line-height: 1.5;
+    padding-top: $spacing-unit * 0.2;
+    padding-bottom: $spacing-unit * 0.2;
+    padding-left: $spacing-unit * 1.15;
+    padding-right: $spacing-unit * 1.15;
 }
 
 
@@ -173,17 +345,11 @@ a.footer_link {
     }
 }
 
-a.venue {
-    text-decoration: none;
+.venue-line {
+    color: $venue-color;
+    margin: 0px;
     font-weight: bold;
-
-    &:visited {
-        color: inherit;
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
+    font-style: italic;
 }
 
 
@@ -215,12 +381,12 @@ a.classname {
 
 a.award,
 a.publication {
-    @include relative-font-size(1.25);
+    @include relative-font-size(1.15);
     font-weight: bold;
 }
 
 a.classname {
-    @include relative-font-size(1.25);
+    @include relative-font-size(1.15);
     font-weight: bold;
 }
 
@@ -228,19 +394,20 @@ a.classname {
 
     a.award,
     a.publication {
-        @include relative-font-size(1.2);
+        @include relative-font-size(1.15);
         font-weight: bold;
     }
 
     a.classname {
-        @include relative-font-size(1.2);
+        @include relative-font-size(1.15);
         font-weight: bold;
     }
 
 }
 
-a.pill,
+.pill,
 a.centerpill,
+button.centerpill,
 a.morepill {
     text-align: center;
     text-decoration: none;
@@ -248,30 +415,136 @@ a.morepill {
     border-radius: 100px;
 }
 
-a.pill,
-a.centerpill {
-    background-color: $pill-color;
+.pill,
+a.centerpill,
+button.centerpill {
+    background-color: $button-surface-color;
     color: $text-color;
-    padding: $spacing-unit / 4 $spacing-unit;
+    padding: 0 $spacing-unit;
     font-weight: 500;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
 
     &:visited {
-        background-color: $pill-color;
+        background-color: $button-surface-color;
         color: $text-color;
     }
 
     &:hover {
-        background-color: $interact-pill-color;
+        background-color: $button-hover-color;
         color: $text-color;
+        text-decoration: none;
     }
 }
 
-a.pill {
+.pill {
     margin: 0 $spacing-unit $spacing-unit 0;
 }
 
-a.centerpill {
+a.centerpill,
+button.centerpill {
     margin: $spacing-unit;
+}
+
+.centerpill-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: $spacing-unit;
+}
+
+.centerpill-group {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 999px;
+    background-color: $button-surface-color;
+    box-sizing: border-box;
+}
+
+.centerpill-group .centerpill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: transparent;
+    position: relative;
+    line-height: 1.35;
+    font-size: clamp(12px, 4.6vw, #{$base-font-size});
+    white-space: nowrap;
+    padding: 4px $spacing-unit;
+    border-radius: 999px;
+    box-sizing: border-box;
+}
+
+.centerpill-group .centerpill:hover {
+    background-color: $button-hover-color;
+}
+
+.centerpill-email {
+    display: none;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    color: $text-color;
+    font-weight: 500;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.centerpill-email span {
+    line-height: 1.35;
+    font-size: clamp(12px, 4.6vw, #{$base-font-size});
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px $spacing-unit;
+}
+
+.centerpill-email-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(#{$base-font-size} * 1.35 + 8px);
+    height: calc(#{$base-font-size} * 1.35 + 8px);
+    border: 0;
+    border-radius: 999px;
+    background-color: transparent;
+    color: $text-color;
+    cursor: pointer;
+    padding: 0;
+}
+
+.centerpill-email-close svg {
+    width: 70%;
+    height: 70%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.centerpill-email-close:hover,
+.centerpill-email-close:focus-visible {
+    background-color: $button-hover-color;
+    color: $text-color;
+}
+
+.centerpill-group.is-email-open .centerpill-link,
+.centerpill-group.is-email-open .centerpill-email-trigger {
+    display: none;
+}
+
+.centerpill-group.is-email-open .centerpill-email {
+    display: flex;
 }
 
 .pilldiv {
@@ -304,13 +577,22 @@ p.authors {
   color: $light-text-color;
 }
 
-span.honors{
+span.decor{
   font-weight:bold;
-  background-color:#c92a2a;
-  color: $background-color;
+  font-style: italic;
+  text-transform: uppercase;
+  background-color: #d97706;
+  color: #ffffff;
   border-radius: 0px;
   margin-left: $spacing-unit;
-  padding:0px 3px 0px 3px;
+  padding: 2px 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    span.decor {
+        background-color: #60a5fa;
+        color: #111827;
+    }
 }
 
 span.dots {
@@ -327,14 +609,32 @@ span.dots {
 }
 
 .page-divider {
-  border: 0;
-  border-top: 2px solid $pill-color;
-  margin: 24px 0;
+  display: none;
 }
 
 .page-accent {
     margin-bottom: 0;
     font-weight: bold;
+    color: $link-base-color;
+    font-style: italic;
+    font-size: $base-font-size;
+}
+
+.page-decor {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: #d97706;
+    color: #ffffff;
+    margin-left: $spacing-unit;
+    padding: 2px 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .page-decor {
+        background-color: #fbbf24;
+        color: #111827;
+    }
 }
 
 .page-title {
@@ -356,15 +656,30 @@ span.dots {
     margin-bottom: $spacing-unit;
 }
 
+.page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-unit * 0.65 $spacing-unit * 1.15;
+}
+
+.page-actions .pill {
+    margin: 0;
+    line-height: 1.5;
+    padding-top: $spacing-unit * 0.2;
+    padding-bottom: $spacing-unit * 0.2;
+    padding-left: $spacing-unit * 1.15;
+    padding-right: $spacing-unit * 1.15;
+}
+
 
 .page-embed-card {
   position: relative;
-  margin: 25px 0;
+  margin: $spacing-unit * 2 0;
   padding: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
-  border-radius: 10px;
-  //outline: 2px solid $pill-color;
+  border-radius: 8px;
+  background-color: #ffffff;
 }
 
 .page-embed-card iframe {
@@ -376,16 +691,32 @@ span.dots {
 }
 
 .page-card {
-    margin: $spacing-unit 0;
-    //padding: $spacing-unit * 1;
-    border-radius: $spacing-unit;
-    //background-color: $pill-color;
-    //outline: 2px  solid $pill-color;
+    margin: $spacing-unit * 2 0;
+    padding: $spacing-unit * 2;
+    border-radius: 8px;
+    background-color: #ffffff;
 }
 
 .page-card-title {
     margin: 0 0 $spacing-unit 0;
     font-weight: bold;
+}
+
+.page-card .page-divider {
+    display: block;
+    border: 0;
+    border-top: 1px solid $border-color-01;
+    margin: $spacing-unit * 2 0;
+}
+
+.page-card img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page-card-image-narrow {
+    max-width: 500px;
 }
 
 .page-card-body {
@@ -394,7 +725,7 @@ span.dots {
 
 .page-card-body-spaced {
     margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit*2;
+    margin-bottom: 0;
 }
 
 .page-bibtex {
@@ -402,4 +733,11 @@ span.dots {
     border-color: $border-color-01;
     background-color: $code-background-color;
     color: $text-color;
+}
+
+@media (prefers-color-scheme: dark) {
+    .page-embed-card,
+    .page-card {
+        background-color: #18181b;
+    }
 }

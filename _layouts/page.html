@@ -4,13 +4,12 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-    <p style="color:{{ site.data.publications[page.title].color }};
-      margin: 0px; font-weight:bold">
-      {{ site.data.publications[page.title].venue }}</p>
     <h2 style="font-weight: 600;">
       {{ site.data.publications[page.title].title }}
     </h2>
     <p style="color:#696969;">{{ site.data.publications[page.title].authors }} </p>
+    <p class="venue-line">
+      {{ site.data.publications[page.title].venue }}</p>
   </header>
 
   {{ site.data.publications[page.title].author }}
