@@ -235,7 +235,8 @@ img.bio-profile {
     margin: 0;
     padding: $spacing-unit * 2;
     background-color: #ffffff;
-    justify-items: center;
+    justify-items: start;
+    text-align: left;
     width: 100%;
     position: relative;
 }
@@ -294,11 +295,13 @@ img.bio-profile {
     font-size: $base-font-size;
     line-height: 1.35;
     margin: 0 0 $spacing-unit / 6 0;
+    text-align: left;
 }
 
 .teaching-terms {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: $spacing-unit * 0.65 $spacing-unit * 1.15;
     margin-top: $spacing-unit * 0.75;
 }
@@ -554,7 +557,7 @@ button.centerpill {
 
 a.morepill {
     background-color: $link-base-color;
-    color: white;
+    color: $background-color;
     margin: 0px;
     font-size: large;
     padding-top: $spacing-unit * 1;
